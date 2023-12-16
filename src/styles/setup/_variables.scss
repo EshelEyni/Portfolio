@@ -1,0 +1,39 @@
+/* COLOR PALETTE */
+:root {
+  --color-primary: #e67e22; /* Primary Color: Warm Orange */
+
+  /* Tints of Primary Color */
+  --color-tint-lightest: #fdf2e9; /* Very Light Orange */
+  --color-tint-lighter: #fae5d3; /* Lighter Orange */
+  --color-tint-light: #eb984e; /* Light Orange */
+
+  /* Shades of Primary Color */
+  --color-shade-dark: #cf711f; /* Darker Orange */
+  --color-shade-darkest: #45260a; /* Almost Brown */
+
+  /* Grey Accents */
+  --color-accent-medium: #888; /* Medium Grey */
+  --color-accent-light-on-white: #767676; /* Lightest Grey on White */
+  --color-accent-light-on-tint: #6f6f6f; /* Lightest Grey on Lightest Tint */
+  --color-accent-dark: #555; /* Dark Grey */
+  --color-accent-darker: #333; /* Very Dark Grey */
+
+  /* Additional Palette Settings */
+  --color-background: #ffffff; /* Background Color: White */
+  --color-text-primary: #333; /* Primary Text Color: Very Dark Grey */
+  --font-primary: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* Example Font Stack */
+  --color-black: #000000;
+  --color-white: #ffffff;
+}
+
+// LAYOUT
+$layoutPadding: 20px;
+
+// LAYOUT BREAKPOINTS
+$break-narrow: 1200px;
+$break-normal: 1360px;
+$break-wide: 1920px;
+
+$padded-break-narrow: $break-narrow + $layoutPadding * 2;
+$padded-break-normal: $break-normal + $layoutPadding * 2;
+$padded-break-wide: $break-wide + $layoutPadding * 2;

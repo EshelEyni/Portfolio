@@ -1,0 +1,18 @@
+@import "../../styles/main.scss";
+
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  > * {
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    // color: var(--color-primary);
+    // &:hover {
+    //   color: #61dafb;
+    // }
+  }
+}
