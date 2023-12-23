@@ -28,7 +28,6 @@
 
   .section-header {
     p {
-      font-size: 2rem;
       text-align: start;
       line-height: 1.45;
     }
@@ -79,44 +78,50 @@
 
       &__bullet {
         position: absolute;
-        top: 0.5rem;
+        top: 2rem;
         left: -2rem;
         background-color: var(--color-text-primary);
         border-radius: 50%;
         width: 1rem;
         height: 1rem;
+        max-width: 8.5px;
+        max-height: 8.5px;
         color: inherit;
 
-        @include tab-layout {
-          top: 0.75rem;
-          width: 0.5rem;
-          height: 0.5rem;
-        }
-
         @include desktop-layout {
-          top: 0.65rem;
-          width: 0.45rem;
-          height: 0.45rem;
+          top: 1.3rem;
         }
       }
 
       &__title {
-        font-size: 2rem;
         font-weight: 600;
         line-height: 1;
-
-        @include desktop-layout {
-          font-size: 1.5rem;
-        }
       }
 
       &__description {
         display: inline-block;
-        font-size: 1.5rem;
         line-height: 1.45;
+      }
+    }
+  }
 
-        @include desktop-layout {
-          font-size: 1.2rem;
+  &__technologies {
+    .technologies-list {
+      &__list {
+        li {
+          padding: 1.4rem 2.8rem;
+
+          @include desktop-layout {
+            padding: 1rem 2rem;
+          }
+
+          span {
+            font-size: 2.5rem;
+
+            @include desktop-layout {
+              font-size: 1.8rem;
+            }
+          }
         }
       }
     }
