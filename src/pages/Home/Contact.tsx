@@ -4,11 +4,6 @@ import "./Contact.scss";
 import { InViewSection } from "../../components/InViewSection/InViewSection";
 import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
-import {
-  EMAIL_JS_SERVICE_ID,
-  EMAIL_JS_TEMPLATE_ID,
-  EMAIL_JS_USER_ID,
-} from "../../../config";
 import { BoxLoader } from "../../components/BoxLoader/BoxLoader";
 
 type FormValues = {
@@ -20,6 +15,9 @@ type FormValues = {
 type Status = "idle" | "pending" | "fulfilled" | "rejected";
 
 const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+const EMAIL_JS_SERVICE_ID = "service_i7d43qw";
+const EMAIL_JS_TEMPLATE_ID = "template_3f491ij";
+const EMAIL_JS_USER_ID = "N7y3TUuNpf11IgTwZ";
 
 export const Contact: FC = () => {
   const [status, setStatus] = useState<Status>("idle");
