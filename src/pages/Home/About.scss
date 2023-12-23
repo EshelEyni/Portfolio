@@ -4,188 +4,165 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20rem;
+  gap: 5rem;
   width: 100%;
   min-height: 100vh;
-  padding: 10% 0;
+  padding: 20% 0;
   background: linear-gradient(
     var(--color-tint-lighter),
     var(--color-tint-lightest)
   );
 
+  @include desktop-layout {
+    gap: 10rem;
+    padding: 5% 0;
+  }
+
   .section {
     width: 100%;
   }
 
-  &__header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    width: 100%;
-
-    h1 {
-      text-transform: uppercase;
-      font-size: 7.5rem;
-      color: var(--color-text-primary);
-    }
-
-    span {
-      width: 7.5rem;
-      height: 0.5rem;
-      border-radius: 35px;
-      background-color: var(--color-shade-dark);
-    }
-
-    p {
-      font-size: 2.8rem;
-      color: var(--color-accent-medium);
-      text-align: center;
-      min-width: 75rem;
-    }
-  }
-
   &__content {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    gap: 10rem;
     width: 85%;
+
+    @include desktop-layout {
+      flex-direction: row;
+      gap: 0;
+    }
 
     > * {
       h2 {
-        font-size: 4.2rem;
+        font-size: 5.5rem;
         text-transform: capitalize;
         color: var(--color-text-primary);
+
+        @include desktop-layout {
+          font-size: 4rem;
+        }
       }
     }
 
     .section {
       flex-basis: 45%;
     }
+  }
 
-    &__desc {
+  &__desc {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100%;
+
+    &__content {
       display: flex;
       flex-direction: column;
-      gap: 3rem;
+      gap: 2rem;
       width: 100%;
 
-      &__content {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        width: 100%;
+      p {
+        color: var(--color-accent-dark);
+        text-align: justify;
+        display: block;
+        max-width: none;
 
-        p {
-          font-size: 2.5rem;
-          color: var(--color-accent-dark);
-          text-align: justify;
-          display: block;
-          max-width: none;
-
-          a {
-            color: var(--color-primary);
-            text-decoration: underline;
-            font-weight: 600;
-            transition: all 0.3s ease-in-out;
-          }
-        }
-      }
-
-      &__contact-link {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: var(--color-primary);
-        width: 18rem;
-        height: 6rem;
-        border-radius: 5px;
-        font-size: 2rem;
-
-        span {
-          text-transform: uppercase;
-          font-weight: 700;
+        a {
+          color: var(--color-primary);
+          text-decoration: underline;
+          font-weight: 600;
           transition: all 0.3s ease-in-out;
-          color: #fff;
         }
       }
     }
+  }
 
-    &__skills {
+  &__skills {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    h2 {
+      text-transform: capitalize;
+    }
+
+    &__list {
       display: flex;
-      flex-direction: column;
-      gap: 3rem;
+      flex-wrap: wrap;
+      gap: 1.25rem;
 
-      h2 {
-        text-transform: capitalize;
-      }
-
-      &__list {
+      li {
         display: flex;
-        flex-wrap: wrap;
-        gap: 1.25rem;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 4rem;
+        border-radius: 10px;
+        background-color: var(--color-background);
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+        position: relative;
+        overflow: hidden;
 
-        li {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          padding: 1.5rem 2.5rem;
-          border-radius: 9px;
-          background-color: var(--color-background);
-          font-size: 3rem;
-          cursor: pointer;
-          transition: all 0.5s ease-in-out;
-          position: relative;
-          overflow: hidden;
 
-          span {
-            color: var(--color-accent-dark);
-            font-size: 2.5rem;
-            font-weight: 600;
-            line-height: 1;
-            z-index: 1;
-            transition: color 0.2s ease-in-out 0.3s;
+        @include desktop-layout {
+          padding: 1rem 2rem;
+        }
+
+        span {
+          color: var(--color-accent-dark);
+          font-size: 3.5rem;
+          font-weight: 600;
+          line-height: 1;
+          z-index: 1;
+          transition: color 0.2s ease-in-out 0.3s;
+
+          @include desktop-layout {
+            font-size: 2rem;
           }
+        }
 
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0;
+          left: -50%;
+          width: 50%;
+          height: 100%;
+          background-color: var(--color-primary);
+          transition: all 0.5s ease-in-out;
+          opacity: 0;
+        }
+
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0;
+          right: -50%;
+          width: 50%;
+          height: 100%;
+          background-color: var(--color-primary);
+          transition: all 0.5s ease-in-out;
+          opacity: 0;
+        }
+
+        &:hover,
+        &:focus {
           &::before {
-            content: "";
-            display: block;
-            position: absolute;
-            top: 0;
-            left: -50%;
-            width: 50%;
-            height: 100%;
-            background-color: var(--color-primary);
-            transition: all 0.5s ease-in-out;
-            opacity: 0;
+            left: 0;
+            opacity: 1;
           }
 
           &::after {
-            content: "";
-            display: block;
-            position: absolute;
-            top: 0;
-            right: -50%;
-            width: 50%;
-            height: 100%;
-            background-color: var(--color-primary);
-            transition: all 0.5s ease-in-out;
-            opacity: 0;
+            right: 0;
+            opacity: 1;
           }
 
-          &:hover {
-            &::before {
-              left: 0;
-              opacity: 1;
-            }
-
-            &::after {
-              right: 0;
-              opacity: 1;
-            }
-
-            span {
-              color: #fff;
-            }
+          span {
+            color: #fff;
           }
         }
       }

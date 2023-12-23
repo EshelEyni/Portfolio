@@ -3,6 +3,7 @@ import { scrollToElementById } from "../../services/utilService";
 import "./About.scss";
 import { useNavigate } from "react-router-dom";
 import { InViewSection } from "../../components/InViewSection/InViewSection";
+import { SectionHeader } from "../../components/SectionHeader/SectionHeader";
 
 export const About: FC = () => {
   const navigate = useNavigate();
@@ -38,21 +39,16 @@ export const About: FC = () => {
 
   return (
     <section id="about" className="about">
-      <InViewSection>
-        <header className="about__header">
-          <h1>about me</h1>
-          <span />
-          <p>
-            Here you will find more information about me, and my current skills
-            in terms of programming and technology.
-          </p>
-        </header>
-      </InViewSection>
+      <SectionHeader
+        title="about me"
+        description="Here you will find more information about me, and my current skills
+        in terms of programming and technology."
+      />      
       <div className="about__content">
         <InViewSection>
-          <div className="about__content__desc">
+          <div className="about__desc">
             <h2>Get to know me!</h2>
-            <div className="about__content__desc__content">
+            <div className="about__desc__content">
               <p>
                 I'm a <strong>Web Developer</strong> building Web Applications
                 that leads to the success of the overall product. Check out some
@@ -82,7 +78,7 @@ export const About: FC = () => {
             </div>
 
             <a
-              className="about__content__desc__contact-link btn btn--animated"
+              className="btn btn--animated"
               href="#contact"
               onClick={handleContactClick}
             >
@@ -91,9 +87,9 @@ export const About: FC = () => {
           </div>
         </InViewSection>
         <InViewSection>
-          <div className="about__content__skills">
+          <div className="about__skills">
             <h2>my skills</h2>
-            <ul className="about__content__skills__list">
+            <ul className="about__skills__list">
               {skills.map((skill) => (
                 <li key={skill} onClick={() => handleSkillClick(skill)}>
                   <span>{skill}</span>

@@ -4,8 +4,26 @@
 
 html {
   font-family: var(--font-primary);
-  font-size: 62.5%;
+  font-size: 40%;
   height: 100%;
+}
+
+@include tab-layout {
+  html {
+    font-size: 50%;
+  }
+}
+
+@include desktop-layout {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@include desktop-layout {
+  html {
+    font-size: 75%;
+  }
 }
 
 body {
@@ -34,6 +52,12 @@ img {
 p {
   margin: 0;
   padding: 0;
+  font-size: 3.5rem;
+  line-height: 1.2;
+
+  @include desktop-layout {
+    font-size: 2rem;
+  }
 }
 
 ul {

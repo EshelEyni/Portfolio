@@ -1,1 +1,131 @@
 @import "../../styles/main.scss";
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  width: 100%;
+  // min-height: 100vh;
+  padding: 10rem 0;
+  background: linear-gradient(
+    var(--color-tint-lighter),
+    var(--color-tint-lightest)
+  );
+
+  @include desktop-layout {
+    gap: 10rem;
+  }
+
+  &__form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.5rem;
+    padding: 3rem 4rem;
+    border-radius: 25px;
+    width: 90%;
+    max-width: 70rem;
+    background-color: var(--color-tint-lighter);
+    border: 2px solid var(--color-primary);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+
+    @include desktop-layout {
+      width: 100%;
+    }
+
+    &__input-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.5rem;
+      width: 100%;
+
+      label {
+        font-size: 3rem;
+        font-weight: 600;
+        color: var(--color-text-primary);
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        height: 7rem;
+        padding: 0 1rem;
+        border-radius: 5px;
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: var(--color-text-primary);
+        outline: none;
+        border: none;
+
+        @include tab-layout {
+          height: 6rem;
+        }
+
+        &:focus {
+          outline: none;
+          border: 2px solid var(--color-primary);
+        }
+
+        &::placeholder {
+          font-size: 2.5rem;
+          text-transform: capitalize;
+          color: var(--color-accent-medium);
+          font-family: var(--font-primary);
+        }
+      }
+
+      textarea {
+        resize: none;
+        padding: 1rem;
+        min-height: 20rem;
+      }
+
+      &__error {
+        color: var(--color-danger);
+        font-size: 1.6rem;
+        font-weight: 600;
+        text-transform: capitalize;
+      }
+    }
+
+    .btn {
+      margin-top: 2rem;
+      color: var(--color-white);
+      width: 16rem;
+      height: 5rem;
+    }
+
+    &__status {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 2rem 4rem;
+      border-radius: 15px;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+      background-color: var(--color-tint-lighter);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+
+      p {
+        font-size: 2.2rem;
+        font-weight: 600;
+        color: var(--color-accent-dark);
+      }
+
+      &__loader {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        height: 150px;
+      }
+    }
+  }
+}

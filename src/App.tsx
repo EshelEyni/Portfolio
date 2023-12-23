@@ -4,13 +4,12 @@ import { ProjectDetails } from "./pages/ProjectDetails/ProjectDetails";
 import { SkillDetails } from "./pages/TechDetails/SkillDetails";
 import { AppHeader } from "./components/AppHeader/AppHeader";
 import "./styles/main.scss";
-import { Sidebar } from "./components/Sidebar/Sidebar";
+import { AppFooter } from "./components/AppFooter/AppFooter";
 
 function App() {
   return (
     <main className="app">
       <AppHeader />
-      <Sidebar />
       <Routes>
         <Route index element={<Navigate replace to="/home" />} />
         <Route path="/home" element={<Home />} />
@@ -18,6 +17,7 @@ function App() {
         <Route path="/skill/:name" element={<SkillDetails />} />
         <Route path="*" element={<Home />} />
       </Routes>
+      <AppFooter />
     </main>
   );
 }

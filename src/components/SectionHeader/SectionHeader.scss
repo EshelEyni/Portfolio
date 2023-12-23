@@ -1,0 +1,34 @@
+@import "../../styles/main.scss";
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+
+  h1 {
+    text-transform: uppercase;
+    font-size: 7.5rem;
+    color: var(--color-text-primary);
+
+    @include desktop-layout {
+      font-size: 5.5rem;
+    }
+  }
+
+  span {
+    width: 5.5rem;
+    height: 0.5rem;
+    border-radius: 35px;
+    background-color: var(--color-shade-dark);
+  }
+
+  p {
+    color: var(--color-accent-medium);
+    text-align: center;
+    margin: 0 2rem;
+    max-width: 75rem;
+  }
+}

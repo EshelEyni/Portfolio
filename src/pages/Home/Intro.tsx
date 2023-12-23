@@ -1,5 +1,6 @@
 import { FC } from "react";
 import "./Intro.scss";
+import { Sidebar } from "../../components/Sidebar/Sidebar";
 
 export const Intro: FC = () => {
   return (
@@ -19,6 +20,7 @@ export const Intro: FC = () => {
           <li key={i}></li>
         ))}
       </ul>
+      <Sidebar />
     </section>
   );
 };

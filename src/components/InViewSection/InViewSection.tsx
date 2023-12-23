@@ -4,11 +4,13 @@ import { useInView } from "react-intersection-observer";
 type InViewSectionProps = {
   children: React.ReactNode;
   threshold?: number;
+  className?: string;
 };
 
 export const InViewSection: FC<InViewSectionProps> = ({
   children,
   threshold = 0.1,
+  className = "",
 }) => {
   const options = { threshold };
   const { ref, inView, entry } = useInView(options);
@@ -19,7 +21,7 @@ export const InViewSection: FC<InViewSectionProps> = ({
   }, [inView, entry]);
 
   return (
-    <div className="section section--hidden" ref={ref}>
+    <div className={`${className} section section--hidden`} ref={ref}>
       {children}
     </div>
   );

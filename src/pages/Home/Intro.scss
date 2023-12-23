@@ -17,18 +17,27 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 2rem;
     z-index: 100;
 
     h1 {
       text-transform: uppercase;
-      font-size: 8rem;
+      font-size: 7.5rem;
+      text-align: center;
       color: var(--color-text-primary);
+      margin: 0 2rem;
+
+      @include desktop-layout {
+        font-size: 5.5rem;
+      }
     }
 
     p {
-      font-size: 2.35rem;
       color: var(--color-accent-medium);
       text-align: center;
+      margin: 0 2rem;
+      max-width: 75rem;
     }
   }
 

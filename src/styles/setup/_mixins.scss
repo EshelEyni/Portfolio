@@ -1,25 +1,31 @@
 /* Media queries Breakpoint mixins */
 
-@mixin for-mobile-layout {
-  @media (max-width: $break-narrow) {
+@mixin mobile-layout {
+  @media only screen and (max-width: $break-phone) {
     @content;
   }
 }
 
-@mixin for-narrow-layout {
-  @media (min-width: $break-narrow) {
+@mixin tab-layout {
+  @media only screen and (min-width: $break-phone) {
     @content;
   }
 }
 
-@mixin for-normal-layout {
-  @media (min-width: $break-normal) {
+@mixin desktop-layout {
+  @media only screen and (min-width: $break-tab-port) {
     @content;
   }
 }
 
-@mixin for-wide-layout {
-  @media (min-width: $break-wide) {
+@mixin desktop-layout {
+  @media only screen and (min-width: $break-desktop) {
+    @content;
+  }
+}
+
+@mixin large-desktop-layout {
+  @media only screen and (min-width: $break-large-desktop) {
     @content;
   }
 }

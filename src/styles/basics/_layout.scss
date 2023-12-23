@@ -16,15 +16,15 @@
     grid-template-columns: repeat(6, 1fr);
   }
 
-  @include for-narrow-layout {
-    @include layoutGTC($break-narrow);
+  @include tab-layout {
+    @include layoutGTC($break-phone);
   }
 
-  @include for-normal-layout {
-    @include layoutGTC($break-normal);
+  @include desktop-layout {
+    @include layoutGTC($break-tab-port);
   }
 
-  @include for-wide-layout {
-    @include layoutGTC($break-wide);
+  @include desktop-layout {
+    @include layoutGTC($break-desktop);
   }
 }
