@@ -1,13 +1,11 @@
 import { FC } from "react";
 import { scrollToElementById } from "../../services/utilService";
 import "./About.scss";
-import { useNavigate } from "react-router-dom";
 import { InViewSection } from "../../components/InViewSection/InViewSection";
 import { SectionHeader } from "../../components/SectionHeader/SectionHeader";
+import { TechnologiesList } from "../../components/TechnologiesList/TechnologiesList";
 
 export const About: FC = () => {
-  const navigate = useNavigate();
-
   const skills = [
     "HTML",
     "CSS",
@@ -33,17 +31,13 @@ export const About: FC = () => {
     scrollToElementById(e);
   }
 
-  function handleSkillClick(name: string) {
-    navigate(`/skill/${name}`);
-  }
-
   return (
     <section id="about" className="about">
       <SectionHeader
         title="about me"
         description="Here you will find more information about me, and my current skills
         in terms of programming and technology."
-      />      
+      />
       <div className="about__content">
         <InViewSection>
           <div className="about__desc">
@@ -86,18 +80,7 @@ export const About: FC = () => {
             </a>
           </div>
         </InViewSection>
-        <InViewSection>
-          <div className="about__skills">
-            <h2>my skills</h2>
-            <ul className="about__skills__list">
-              {skills.map((skill) => (
-                <li key={skill} onClick={() => handleSkillClick(skill)}>
-                  <span>{skill}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </InViewSection>
+        <TechnologiesList title="my skills" technologies={skills} />
       </div>
     </section>
   );

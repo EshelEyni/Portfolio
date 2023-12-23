@@ -71,7 +71,7 @@
     height: 100vh;
     position: fixed;
     top: 0;
-    left: 0;
+    left: -50%;
     z-index: 1500;
     opacity: 0;
     width: 0;
@@ -81,7 +81,7 @@
       flex-direction: column;
       gap: 2.5rem;
       position: absolute;
-      top: 35%;
+      top: 40%;
       left: 50%;
       transform: translate(-50%, -50%);
       list-style: none;
@@ -136,6 +136,7 @@
   }
 
   .nav {
+    left: 0;
     opacity: 1;
     width: 100%;
   }

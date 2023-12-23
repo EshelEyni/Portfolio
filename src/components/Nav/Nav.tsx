@@ -13,9 +13,9 @@ export const Nav: FC<NavProps> = ({ setIsMenuClicked }) => {
   const links = [
     { href: "#intro", text: "Home" },
     { href: "#about", text: "About" },
-    { href: "#projects", text: "Projects" },
     { href: "#contact", text: "Contact" },
     { href: "#resume", text: "Resume" },
+    { href: "#projects", text: "Projects" },
   ];
 
   function handleNavLinkClick(

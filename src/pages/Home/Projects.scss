@@ -13,6 +13,8 @@
     var(--color-tint-lighter)
   );
 
+  padding: 5rem 0;
+
   @include desktop-layout {
     gap: 10rem;
   }

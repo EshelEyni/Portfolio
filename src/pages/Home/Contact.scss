@@ -5,11 +5,10 @@
   flex-direction: column;
   gap: 5rem;
   width: 100%;
-  // min-height: 100vh;
   padding: 10rem 0;
   background: linear-gradient(
-    var(--color-tint-lighter),
-    var(--color-tint-lightest)
+    var(--color-tint-lightest),
+    var(--color-tint-lighter)
   );
 
   @include desktop-layout {

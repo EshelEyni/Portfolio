@@ -9,8 +9,8 @@
   min-height: 100vh;
   padding: 20% 0;
   background: linear-gradient(
-    var(--color-tint-lighter),
-    var(--color-tint-lightest)
+    var(--color-tint-lightest),
+    var(--color-tint-lighter)
   );
 
   @include desktop-layout {
@@ -74,96 +74,6 @@
           text-decoration: underline;
           font-weight: 600;
           transition: all 0.3s ease-in-out;
-        }
-      }
-    }
-  }
-
-  &__skills {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-
-    h2 {
-      text-transform: capitalize;
-    }
-
-    &__list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.25rem;
-
-      li {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 2rem 4rem;
-        border-radius: 10px;
-        background-color: var(--color-background);
-        cursor: pointer;
-        transition: all 0.5s ease-in-out;
-        position: relative;
-        overflow: hidden;
-
-
-        @include desktop-layout {
-          padding: 1rem 2rem;
-        }
-
-        span {
-          color: var(--color-accent-dark);
-          font-size: 3.5rem;
-          font-weight: 600;
-          line-height: 1;
-          z-index: 1;
-          transition: color 0.2s ease-in-out 0.3s;
-
-          @include desktop-layout {
-            font-size: 2rem;
-          }
-        }
-
-        &::before {
-          content: "";
-          display: block;
-          position: absolute;
-          top: 0;
-          left: -50%;
-          width: 50%;
-          height: 100%;
-          background-color: var(--color-primary);
-          transition: all 0.5s ease-in-out;
-          opacity: 0;
-        }
-
-        &::after {
-          content: "";
-          display: block;
-          position: absolute;
-          top: 0;
-          right: -50%;
-          width: 50%;
-          height: 100%;
-          background-color: var(--color-primary);
-          transition: all 0.5s ease-in-out;
-          opacity: 0;
-        }
-
-        &:hover,
-        &:focus {
-          &::before {
-            left: 0;
-            opacity: 1;
-          }
-
-          &::after {
-            right: 0;
-            opacity: 1;
-          }
-
-          span {
-            color: #fff;
-          }
         }
       }
     }

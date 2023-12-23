@@ -24,9 +24,9 @@ export const Home: FC = () => {
     <main className="home-page">
       <Intro />
       <About />
-      <Projects />
       <Contact />
       <Resume />
+      <Projects />
     </main>
   );
 };
