@@ -5,6 +5,7 @@ import { SkillDetails } from "./pages/TechDetails/SkillDetails";
 import { AppHeader } from "./components/AppHeader/AppHeader";
 import "./styles/main.scss";
 import { AppFooter } from "./components/AppFooter/AppFooter";
+import { CourseDetails } from "./pages/CourseDetails/CourseDetails";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/project/:name" element={<ProjectDetails />} />
         <Route path="/skill/:name" element={<SkillDetails />} />
+        <Route path="/course/:id" element={<CourseDetails />} />
         <Route path="*" element={<Home />} />
       </Routes>
       <AppFooter />

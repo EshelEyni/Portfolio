@@ -15,6 +15,7 @@ export const Nav: FC<NavProps> = ({ setIsMenuClicked }) => {
     { href: "#about", text: "About" },
     { href: "#contact", text: "Contact" },
     { href: "#resume", text: "Resume" },
+    { href: "#education", text: "Education" },
     { href: "#projects", text: "Projects" },
   ];
 

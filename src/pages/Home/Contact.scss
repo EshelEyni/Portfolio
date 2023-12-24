@@ -13,6 +13,7 @@
 
   @include desktop-layout {
     gap: 10rem;
+    padding: 0;
   }
 
   &__form {

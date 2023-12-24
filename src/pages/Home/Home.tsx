@@ -6,6 +6,7 @@ import { Projects } from "./Projects";
 import { Contact } from "./Contact";
 import { Resume } from "./Resume";
 import { useLocation } from "react-router-dom";
+import { Education } from "./Education";
 
 export const Home: FC = () => {
   const location = useLocation();
@@ -26,6 +27,7 @@ export const Home: FC = () => {
       <About />
       <Contact />
       <Resume />
+      <Education />
       <Projects />
     </main>
   );

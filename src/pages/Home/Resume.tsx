@@ -16,8 +16,8 @@ export const Resume: FC = () => {
           <a
             target="_blank"
             rel="noreferrer"
-            href="/CV - Eshel Eyni.pdf"
-            download="CV - Eshel Eyni.pdf"
+            href="/Eshel Eyni - CV.pdf"
+            download="Eshel Eyni - CV.pdf"
             className="resume__button btn btn--animated"
           >
             <span>Resume</span>
