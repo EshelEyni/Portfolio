@@ -19,7 +19,179 @@ export type Course = {
   imgUrl: string;
 };
 
-export const skills = [];
+export type Skill = {
+  name: string;
+  logo: string;
+  courseIds: string[];
+  projectNames: string[];
+  proffesionalExperienceIds: string[];
+};
+
+export type ProffesionalExperience = {
+  id: string;
+  companyName: string;
+  position: string;
+  startDate: string;
+  endDate: string;
+  description: string;
+  logo: string;
+};
+
+export const proffesionalExperience: ProffesionalExperience[] = [
+  {
+    id: "1",
+    companyName: "IDMR Solutions",
+    position: "Full Stack Developer",
+    startDate: "01-02-2022",
+    endDate: "Present",
+    description:
+      "As a Full Stack Developer at IDMR Solutions, I am responsible for maintaining and enhancing application features, ensuring robust functionality and user experience. My role involves identifying and resolving bugs, developing complex XSL templates integrated with jQuery, and managing SQL Server stored procedures for optimized data operations. Additionally, I specialize in creating comprehensive reports using DevExpress Reporting tools, contributing to data-driven decision-making processes within the company.",
+    logo: "/logo-idmr.png",
+  },
+];
+
+export const skills: Skill[] = [
+  {
+    name: "HTML",
+    logo: "/html-logo.png",
+    courseIds: ["1", "2", "3"],
+    projectNames: ["Snapshot", "Symphony", "Chirper", "DevQuiz", "Kceli"],
+    proffesionalExperienceIds: ["1"],
+  },
+  {
+    name: "CSS",
+    logo: "/css-logo.png",
+    courseIds: ["1", "2", "3"],
+    projectNames: ["Snapshot", "Symphony", "Chirper", "DevQuiz", "Kceli"],
+    proffesionalExperienceIds: ["1"],
+  },
+  {
+    name: "SASS",
+    logo: "/sass-logo.png",
+    courseIds: ["1", "3"],
+    projectNames: ["Snapshot", "Symphony", "Chirper", "DevQuiz", "Kceli"],
+    proffesionalExperienceIds: ["1"],
+  },
+  {
+    name: "Tailwind CSS",
+    logo: "/tailwind-logo.png",
+    courseIds: ["6"],
+    projectNames: ["DevQuiz"],
+    proffesionalExperienceIds: [],
+  },
+  {
+    name: "Bootstrap",
+    logo: "/bootstrap-logo.png",
+    courseIds: ["1"],
+    projectNames: [],
+    proffesionalExperienceIds: ["1"],
+  },
+  {
+    name: "JavaScript",
+    logo: "/javascript-logo.png",
+    courseIds: ["1", "4", "5", "6", "7", "10", "11", "12"],
+    projectNames: ["Snapshot", "Symphony", "Chirper", "DevQuiz", "Kceli"],
+    proffesionalExperienceIds: ["1"],
+  },
+  {
+    name: "TypeScript",
+    logo: "/typescript-logo.png",
+    courseIds: ["1", "5", "11"],
+    projectNames: ["Snapshot", "Chirper", "DevQuiz", "Kceli"],
+    proffesionalExperienceIds: [],
+  },
+  {
+    name: "JQuery",
+    logo: "/jquery-logo.png",
+    courseIds: ["1"],
+    projectNames: [],
+    proffesionalExperienceIds: ["1"],
+  },
+  {
+    name: "React",
+    logo: "/react-logo.png",
+    courseIds: ["1", "6"],
+    projectNames: ["Symphony", "Chirper", "DevQuiz", "Kceli"],
+    proffesionalExperienceIds: [],
+  },
+  {
+    name: "Redux",
+    logo: "/redux-logo.png",
+    courseIds: ["1", "6"],
+    projectNames: ["Symphony", "Chirper", "DevQuiz", "Kceli"],
+    proffesionalExperienceIds: [],
+  },
+  {
+    name: "Angular",
+    logo: "/angular-logo.png",
+    courseIds: ["1"],
+    projectNames: ["Snapshot"],
+    proffesionalExperienceIds: [],
+  },
+  {
+    name: "Node.js",
+    logo: "/nodejs-logo.png",
+    courseIds: ["1", "7", "10", "11"],
+    projectNames: ["Symphony", "Snapshot", "Chirper", "DevQuiz", "Kceli"],
+    proffesionalExperienceIds: [],
+  },
+  {
+    name: "Express",
+    logo: "/express-logo.png",
+    courseIds: ["1", "7", "9", "10"],
+    projectNames: ["Symphony", "Snapshot", "Chirper", "DevQuiz", "Kceli"],
+    proffesionalExperienceIds: [],
+  },
+  {
+    name: "MongoDB",
+    logo: "/mongodb-logo.png",
+    courseIds: ["1", "7", "9"],
+    projectNames: ["Symphony", "Chirper", "Kceli"],
+    proffesionalExperienceIds: [],
+  },
+  {
+    name: "Mongoose",
+    logo: "/mongoose-logo.png",
+    courseIds: ["7"],
+    projectNames: ["Chirper", "Kceli"],
+    proffesionalExperienceIds: [],
+  },
+  {
+    name: "SQL",
+    logo: "/sql-logo.png",
+    courseIds: ["8"],
+    projectNames: ["Snapshot"],
+    proffesionalExperienceIds: ["1"],
+  },
+  {
+    name: "RavenDB",
+    logo: "/ravendb-logo.png",
+    courseIds: [],
+    projectNames: ["DevQuiz"],
+    proffesionalExperienceIds: [],
+  },
+  {
+    name: "Jest",
+    logo: "/jest-logo.png",
+    courseIds: ["10", "11"],
+    projectNames: ["Chirper", "Kceli"],
+    proffesionalExperienceIds: [],
+  },
+  {
+    name: "Git",
+    logo: "/git-logo.png",
+    courseIds: [],
+    projectNames: ["Symphony", "Snapshot", "Chirper", "DevQuiz", "Kceli"],
+    proffesionalExperienceIds: [],
+  },
+  {
+    name: "GitHub",
+    logo: "/github-logo.png",
+    courseIds: [],
+    projectNames: ["Symphony", "Snapshot", "Chirper", "DevQuiz", "Kceli"],
+    proffesionalExperienceIds: [],
+  },
+];
 
 export const projects: Project[] = [
   {
@@ -327,7 +499,7 @@ export const projects: Project[] = [
 export const courses: Course[] = [
   {
     id: "1",
-    name: "Coding Academy",
+    name: "Full Stack Development",
     logo: "/coding-academy-logo.jpg",
     year: 2022,
     imgUrl: "/certificate - Coding Academy.png",

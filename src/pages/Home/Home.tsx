@@ -13,11 +13,12 @@ export const Home: FC = () => {
 
   useEffect(() => {
     const id = location.state?.id;
+    console.log(id);
     if (!id) return;
     const element = document.getElementById(id);
     if (!element) return;
-    element.scrollIntoView({ behavior: "smooth" });
-    if (id) delete location.state.id;
+    element.scrollIntoView({ behavior: "smooth", block: "end" });
+    if (id) location.state.id = "";
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

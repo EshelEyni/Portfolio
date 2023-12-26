@@ -12,20 +12,6 @@
     var(--color-tint-lighter)
   );
 
-  &__not-found-message {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    margin-top: 10rem;
-
-    .btn {
-      width: 15rem;
-      height: 4rem;
-      font-size: 1.5rem;
-    }
-  }
-
   .section-header {
     p {
       text-align: start;

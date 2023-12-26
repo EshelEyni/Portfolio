@@ -1,35 +1,26 @@
 import { FC, useEffect } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { projects } from "../../services/dataService";
 import "./ProjectDetails.scss";
 import { SectionHeader } from "../../components/SectionHeader/SectionHeader";
 import { InViewSection } from "../../components/InViewSection/InViewSection";
 import { TechnologiesList } from "../../components/TechnologiesList/TechnologiesList";
+import { NotFoundMessage } from "../../components/NotFoundMessage/NotFoundMessage";
 
 export const ProjectDetails: FC = () => {
   const params = useParams<{ name: string }>();
-  const navigate = useNavigate();
 
   const { name } = params;
   const porject = projects.find((p) => p.name === name);
 
-  function onGoBack() {
-    navigate(-1);
-  }
-
   useEffect(() => {
-  window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }, []);
 
   if (!porject)
     return (
       <main className="project-details">
-        <div className="project-details__not-found-message">
-          <p>🔍 Oops! Project not found.</p>
-          <button onClick={onGoBack} className="btn btn-animated">
-            Go back
-          </button>
-        </div>
+        <NotFoundMessage entityName="Project" />
       </main>
     );
 

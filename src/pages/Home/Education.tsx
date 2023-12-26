@@ -10,7 +10,6 @@ export const Education: FC = () => {
         title="Education"
         description="The Courses I have taken and the Certifications I have earned."
       />
-
       <CourseList />
     </section>
   );

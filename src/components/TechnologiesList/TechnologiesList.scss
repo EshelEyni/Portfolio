@@ -1,6 +1,6 @@
 @import "../../styles/main.scss";
 
-.technologies-list {
+.technologies {
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -14,17 +14,17 @@
     flex-wrap: wrap;
     gap: 1.25rem;
 
-    li {
+    &__item {
       display: flex;
       align-items: center;
       justify-content: center;
       padding: 2rem 4rem;
       border-radius: 10px;
       background-color: var(--color-background);
-      cursor: pointer;
       transition: all 0.5s ease-in-out;
       position: relative;
       overflow: hidden;
+      cursor: not-allowed;
 
       @include desktop-layout {
         padding: 1rem 2rem;
@@ -42,6 +42,10 @@
           font-size: 2rem;
         }
       }
+    }
+
+    &__item--active {
+      cursor: pointer;
 
       &::before {
         content: "";

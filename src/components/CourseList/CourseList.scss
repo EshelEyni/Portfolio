@@ -26,6 +26,11 @@
       justify-content: space-between;
     }
 
+    @include large-desktop-layout {
+      flex: 1 1 25%;
+      justify-content: space-between;
+    }
+
     &:hover {
       transform: translateY(-5px);
     }
@@ -36,7 +41,6 @@
       gap: 1rem;
       padding: 0 1rem;
       width: 100%;
-      cursor: pointer;
 
       &__logo-container {
         display: flex;
@@ -49,7 +53,8 @@
         background-color: var(--color-white);
 
         @include desktop-layout {
-          display: none;
+          width: 8rem;
+          height: 8rem;
         }
       }
 
@@ -66,7 +71,6 @@
         color: var(--color-text-primary);
 
         @include desktop-layout {
-          text-align: center;
           font-size: 2rem;
         }
       }
