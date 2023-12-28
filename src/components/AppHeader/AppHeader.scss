@@ -17,6 +17,8 @@
   }
 
   @include desktop-layout {
+    padding: 0.35rem 1rem;
+
     .nav {
       display: flex;
     }
