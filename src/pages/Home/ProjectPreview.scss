@@ -57,13 +57,9 @@
     }
 
     &__description {
-      font-size: 4rem;
+      font-size: 3.5rem;
       font-weight: 400;
       color: var(--color-text-primary);
-
-      @include tab-layout {
-        font-size: 3.5rem;
-      }
 
       @include desktop-layout {
         font-size: 1.7rem;

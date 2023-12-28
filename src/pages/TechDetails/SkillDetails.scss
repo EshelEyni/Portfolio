@@ -41,8 +41,8 @@
     border-radius: 50%;
 
     @include desktop-layout {
-      width: 25rem;
-      height: 25rem;
+      width: 15rem;
+      height: 15rem;
     }
   }
 
@@ -103,5 +103,10 @@
     font-size: 1.5rem;
     text-align: start;
     color: var(--color-text-secondary);
+  }
+
+  .course-list,
+  .project-preview__content {
+    padding: 0 1rem;
   }
 }
