@@ -157,3 +157,34 @@
     background-color: var(--color-white);
   }
 }
+
+.nav-menu--fixed {
+  position: fixed;
+  z-index: 2000;
+
+  .nav-menu__button {
+    position: fixed;
+    top: 2rem;
+    right: 1rem;
+    z-index: 3000;
+  }
+
+  .nav-menu__background {
+    top: 2rem;
+    right: 1rem;
+  }
+
+  .nav-menu__icon {
+    &,
+    &::before,
+    &::after {
+      background-color: var(--color-white);
+    }
+  }
+
+  .nav {
+    top: 0;
+    left: 0;
+    z-index: 1500;
+  }
+}

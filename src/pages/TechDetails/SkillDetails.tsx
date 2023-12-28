@@ -38,9 +38,7 @@ export const SkillDetails: FC = () => {
     <main className="skill-details">
       <header className="skill-details__header">
         <div className="skill-details__content">
-          <div className="skill-details__logo-container">
-            <img className="skill-details__logo" src={skill.logo} alt="logo" />
-          </div>
+          <img className="skill-details__logo" src={skill.logo} alt="logo" />
           <h1 className="skill-details__title">{skill.name}</h1>
         </div>
       </header>
@@ -69,9 +67,10 @@ export const SkillDetails: FC = () => {
                     className="skill-details__experience-header-logo"
                   />
                   <h2 className="skill-details__experience-header-title">
-                    {`${p.companyName} - ${p.position} (${dateTitle})`}
+                    {`${p.companyName}`}
                   </h2>
                 </header>
+                <h3 className="skill-details__experience-position">{`${p.position} (${dateTitle})`}</h3>
                 <p className="skill-details__experience-description">
                   {p.description}
                 </p>

@@ -3,7 +3,11 @@ import "./NavMenu.scss";
 import classnames from "classnames";
 import { Nav } from "../Nav/Nav";
 
-export const NavMenu: FC = () => {
+type NavMenuProps = {
+  isFixedMenu?: boolean;
+};
+
+export const NavMenu: FC<NavMenuProps> = ({ isFixedMenu = false }) => {
   const [isClicked, setIsClicked] = useState(false);
 
   function onMenuClick() {
@@ -12,7 +16,12 @@ export const NavMenu: FC = () => {
   }
 
   return (
-    <div className={classnames("nav-menu", { "nav-menu--clicked": isClicked })}>
+    <div
+      className={classnames("nav-menu", {
+        "nav-menu--clicked": isClicked,
+        "nav-menu--fixed": isFixedMenu,
+      })}
+    >
       <label className="nav-menu__button" onClick={onMenuClick}>
         <span className="nav-menu__icon">&nbsp;</span>
       </label>
