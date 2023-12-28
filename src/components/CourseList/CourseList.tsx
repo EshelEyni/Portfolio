@@ -1,8 +1,12 @@
 import { FC } from "react";
-import { courses } from "../../services/dataService";
+import { Course } from "../../services/dataService";
 import "./CourseList.scss";
 
-export const CourseList: FC = () => {
+type CourseListProps = {
+  courses: Course[];
+};
+
+export const CourseList: FC<CourseListProps> = ({ courses }) => {
   return (
     <ul className="course-list">
       {courses.map((course) => (

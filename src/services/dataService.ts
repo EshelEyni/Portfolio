@@ -46,7 +46,7 @@ export const proffesionalExperience: ProffesionalExperience[] = [
     endDate: "Present",
     description:
       "As a Full Stack Developer at IDMR Solutions, I am responsible for maintaining and enhancing application features, ensuring robust functionality and user experience. My role involves identifying and resolving bugs, developing complex XSL templates integrated with jQuery, and managing SQL Server stored procedures for optimized data operations. Additionally, I specialize in creating comprehensive reports using DevExpress Reporting tools, contributing to data-driven decision-making processes within the company.",
-    logo: "/logo-idmr.png",
+    logo: "/idmr-logo.png",
   },
 ];
 

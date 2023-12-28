@@ -2,6 +2,7 @@ import { FC } from "react";
 import { SectionHeader } from "../../components/SectionHeader/SectionHeader";
 import "./Education.scss";
 import { CourseList } from "../../components/CourseList/CourseList";
+import { courses } from "../../services/dataService";
 
 export const Education: FC = () => {
   return (
@@ -10,7 +11,7 @@ export const Education: FC = () => {
         title="Education"
         description="The Courses I have taken and the Certifications I have earned."
       />
-      <CourseList />
+      <CourseList courses={courses} />
     </section>
   );
 };

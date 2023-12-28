@@ -7,12 +7,14 @@ import classNames from "classnames";
 
 type TechnologiesListProps = {
   title?: string;
-  technologies: string[];
+  technologies?: string[];
 };
+
+const defaultTechnologies = skills.map((s) => s.name);
 
 export const TechnologiesList: FC<TechnologiesListProps> = ({
   title,
-  technologies,
+  technologies = defaultTechnologies,
 }) => {
   const navigate = useNavigate();
 

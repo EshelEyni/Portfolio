@@ -6,25 +6,6 @@ import { SectionHeader } from "../../components/SectionHeader/SectionHeader";
 import { TechnologiesList } from "../../components/TechnologiesList/TechnologiesList";
 
 export const About: FC = () => {
-  const skills = [
-    "HTML",
-    "CSS",
-    "SCSS",
-    "Bootstrap",
-    "JavaScript",
-    "TypeScript",
-    "JQuery",
-    "React",
-    "Redux",
-    "Angular",
-    "Node.js",
-    "Express",
-    "MongoDB",
-    "SQL",
-    "Git",
-    "GitHub",
-  ];
-
   function handleContactClick(
     e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
   ) {
@@ -80,7 +61,7 @@ export const About: FC = () => {
             </a>
           </div>
         </InViewSection>
-        <TechnologiesList title="my skills" technologies={skills} />
+        <TechnologiesList title="my skills" />
       </div>
     </section>
   );
