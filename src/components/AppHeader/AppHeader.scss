@@ -41,10 +41,20 @@
 
 .app-header--hidden {
   .nav-menu--fixed {
-    // display: unset;
     .nav-menu__button,
     .nav-menu__background {
-      top: 2rem;
+      top: 1rem;
+    }
+
+    .nav-menu__background {
+      opacity: 0.8;
+    }
+  }
+
+  .nav-menu--fixed.nav-menu--clicked {
+
+    .nav-menu__background {
+      opacity: 1;
     }
   }
 }
