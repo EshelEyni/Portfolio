@@ -13,10 +13,10 @@ export const Nav: FC<NavProps> = ({ setIsMenuClicked }) => {
   const links = [
     { href: "#intro", text: "Home" },
     { href: "#about", text: "About" },
+    { href: "#projects", text: "Projects" },
+    { href: "#education", text: "Education" },
     { href: "#contact", text: "Contact" },
     { href: "#resume", text: "Resume" },
-    { href: "#education", text: "Education" },
-    { href: "#projects", text: "Projects" },
   ];
 
   function handleNavLinkClick(

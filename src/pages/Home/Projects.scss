@@ -9,8 +9,8 @@
   width: 100%;
   min-height: 100vh;
   background: linear-gradient(
+    var(--color-tint-lightest),
     var(--color-tint-lighter),
-    var(--color-tint-lightest)
   );
 
   padding: 5rem 1rem;

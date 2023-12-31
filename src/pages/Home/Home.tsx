@@ -27,10 +27,10 @@ export const Home: FC = () => {
     <main className="home-page">
       <Intro />
       <About />
+      <Projects />
+      <Education />
       <Contact />
       <Resume />
-      <Education />
-      <Projects />
     </main>
   );
 };
