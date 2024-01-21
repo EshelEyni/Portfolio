@@ -4,4 +4,4 @@ Welcome to my portfolio, a comprehensive showcase of my professional journey as 
 
 Here is the link to the website: [Porfolio](https://esheleyni.netlify.app/home)
 
-![Main board image](screenshots/Screenshot-1.png)
+![screenshot](screenshots/Screenshot-1.png)

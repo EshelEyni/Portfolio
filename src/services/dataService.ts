@@ -180,14 +180,14 @@ export const skills: Skill[] = [
   {
     name: "Git",
     logo: "/git-logo.png",
-    courseIds: [],
+    courseIds: ["13"],
     projectNames: ["Symphony", "Snapshot", "Chirper", "DevQuiz", "Kceli"],
     proffesionalExperienceIds: [],
   },
   {
     name: "GitHub",
     logo: "/github-logo.png",
-    courseIds: [],
+    courseIds: ["13"],
     projectNames: ["Symphony", "Snapshot", "Chirper", "DevQuiz", "Kceli"],
     proffesionalExperienceIds: [],
   },
@@ -586,5 +586,12 @@ export const courses: Course[] = [
     logo: "/udemy-logo.png",
     year: 2023,
     imgUrl: "/certificate - Progressive Web Apps (PWA) The Complete Guide.jpg",
+  },
+  {
+    id: "13",
+    name: "The Git & Github Bootcamp",
+    logo: "/udemy-logo.png",
+    year: 2024,
+    imgUrl: "/certificate - The Git & Github Bootcamp.jpg",
   },
 ];
