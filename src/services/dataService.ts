@@ -287,7 +287,7 @@ export const projects: Project[] = [
       },
     ],
     gitHubUrl: "https://github.com/EshelEyni/DevQuiz",
-    liveInstanceUrl: "",
+    liveInstanceUrl: "https://devquiz.esheleyni.com/home",
     imageUrl: "/devQuiz.png",
     technologies: [
       "React",
