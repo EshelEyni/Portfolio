@@ -594,4 +594,11 @@ export const courses: Course[] = [
     year: 2024,
     imgUrl: "/certificate - The Git & Github Bootcamp.jpg",
   },
+  {
+    id: "14",
+    name: "Javascript Algorithms and Data Structures Masterclass",
+    logo: "/udemy-logo.png",
+    year: 2024,
+    imgUrl: "/certificate - Javascript Algorithms and Data Structures Masterclass.jpg",
+  },
 ];
