@@ -224,7 +224,13 @@
 
   .nav {
     top: 0;
-    left: 0;
+    left: -50%;
     z-index: 1500;
+  }
+}
+
+.nav-menu--fixed.nav-menu--clicked {
+  .nav {
+    left: 0;
   }
 }
