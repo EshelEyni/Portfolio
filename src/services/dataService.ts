@@ -143,6 +143,13 @@ export const skills: Skill[] = [
     proffesionalExperienceIds: [],
   },
   {
+    name: "Python",
+    logo: "/python-logo.png",
+    courseIds: ["15"],
+    projectNames: [],
+    proffesionalExperienceIds: [],
+  },
+  {
     name: "MongoDB",
     logo: "/mongodb-logo.png",
     courseIds: ["1", "7", "9"],
@@ -599,6 +606,14 @@ export const courses: Course[] = [
     name: "Javascript Algorithms and Data Structures Masterclass",
     logo: "/udemy-logo.png",
     year: 2024,
-    imgUrl: "/certificate - Javascript Algorithms and Data Structures Masterclass.jpg",
+    imgUrl:
+      "/certificate - Javascript Algorithms and Data Structures Masterclass.jpg",
+  },
+  {
+    id: "15",
+    name: "The Complete Python Pro Bootcamp",
+    logo: "/udemy-logo.png",
+    year: 2024,
+    imgUrl: "/certificate - The Complete Python Pro Bootcamp.jpg",
   },
 ];

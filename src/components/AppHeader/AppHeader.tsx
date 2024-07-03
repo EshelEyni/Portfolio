@@ -11,7 +11,6 @@ export const AppHeader: FC = () => {
 
   function handleVisibilityChange(isVisible: boolean) {
     SetIsHidden(!isVisible);
-    console.log("AppHeader is visible: ", isVisible);
   }
 
   return (
