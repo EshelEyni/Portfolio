@@ -198,9 +198,51 @@ export const skills: Skill[] = [
     projectNames: ["Symphony", "Snapshot", "Chirper", "DevQuiz", "Kceli"],
     proffesionalExperienceIds: [],
   },
+  {
+    name: "Docker",
+    logo: "/docker-logo.png",
+    courseIds: ["16"],
+    projectNames: [],
+    proffesionalExperienceIds: [],
+  },
+  {
+    name: "Kubernetes",
+    logo: "/kubernetes-logo.png",
+    courseIds: ["16"],
+    projectNames: [],
+    proffesionalExperienceIds: [],
+  },
 ];
 
 export const projects: Project[] = [
+  // {
+  //   name: "Roza",
+  //   description: "Roza, is an Proze writing, and Review app",
+  //   features: [
+  //     {
+  //       title: "Proze Writing",
+  //       description: "",
+  //     },
+  //   ],
+  //   gitHubUrl: "https://github.com/EshelEyni/Roza",
+  //   liveInstanceUrl: "",
+  //   imageUrl: "/roza.png",
+  //   technologies: [
+  //     "React",
+  //     "TypeScript",
+  //     "Sass",
+  //     "Node.js",
+  //     "Express",
+  //     "MongoDB",
+  //     "Mongoose",
+  //     "Rest API",
+  //     "Jest",
+  //     "Vitest",
+  //     "Docker",
+  //     "Kubernetes",
+  //     "Microservices",
+  //   ],
+  // },
   {
     name: "Kceli",
     description:
@@ -615,5 +657,12 @@ export const courses: Course[] = [
     logo: "/udemy-logo.png",
     year: 2024,
     imgUrl: "/certificate - The Complete Python Pro Bootcamp.jpg",
+  },
+  {
+    id: "16",
+    name: "Docker and Kubernetes: The Complete Guide",
+    logo: "/udemy-logo.png",
+    year: 2024,
+    imgUrl: "/certificate - Docker amd kubernetes The Complete Guide.jpg",
   },
 ];
