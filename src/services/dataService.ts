@@ -475,7 +475,7 @@ export const projects: Project[] = [
       },
     ],
     gitHubUrl: "https://github.com/EshelEyni/Snapshot",
-    liveInstanceUrl: "https://snapshot-zzha.onrender.com/#/",
+    liveInstanceUrl: "https://snapshot.esheleyni.com/#/",
     imageUrl: "/snapshot.png",
     technologies: [
       "SQLite3",
@@ -532,7 +532,7 @@ export const projects: Project[] = [
       },
     ],
     gitHubUrl: "https://github.com/EshelEyni/Symphony",
-    liveInstanceUrl: "https://symphony.onrender.com/",
+    liveInstanceUrl: "https://symphony.esheleyni.com/",
     imageUrl: "/symphony.png",
     technologies: [
       "React",
