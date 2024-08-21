@@ -300,7 +300,7 @@ export const projects: Project[] = [
       },
     ],
     gitHubUrl: "https://github.com/EshelEyni/Kceli",
-    liveInstanceUrl: "https://kceli-m8oe.onrender.com/home",
+    liveInstanceUrl: "https://kceli.esheleyni.com/home",
     imageUrl: "/kceli.png",
     technologies: [
       "React",
@@ -664,5 +664,12 @@ export const courses: Course[] = [
     logo: "/udemy-logo.png",
     year: 2024,
     imgUrl: "/certificate - Docker amd kubernetes The Complete Guide.jpg",
+  },
+  {
+    id: "17",
+    name: "Microservices with Node JS and React.jpg",
+    logo: "/udemy-logo.png",
+    year: 2024,
+    imgUrl: "/certificate - Microservices with Node JS and React.jpg",
   },
 ];
