@@ -1,34 +1,151 @@
 import { Project } from "../types";
 
 export const projects: Project[] = [
-  // {
-  //   name: "Roza",
-  //   description: "Roza, is an Proze writing, and Book Review app",
-  //   features: [
-  //     {
-  //       title: "Proze Writing",
-  //       description: "",
-  //     },
-  //   ],
-  //   gitHubUrl: "https://github.com/EshelEyni/Roza",
-  //   liveInstanceUrl: "",
-  //   imageUrl: "/roza.png",
-  //   technologies: [
-  //     "React",
-  //     "TypeScript",
-  //     "Sass",
-  //     "Node.js",
-  //     "Express",
-  //     "MongoDB",
-  //     "Mongoose",
-  //     "Rest API",
-  //     "Jest",
-  //     "Vitest",
-  //     "Docker",
-  //     "Kubernetes",
-  //     "Microservices",
-  //   ],
-  // },
+  {
+    name: "Fatal Combat",
+    description:
+      "Fatal Combat is a retro-style 2D fighting game featuring single-player, local multiplayer, and real-time online battles. It combines a custom canvas-based game engine with a Vue frontend and FastAPI backend, supporting animated fighters, CPU-controlled opponents, multiplayer invitations, synchronized combat controls, and secure user accounts.",
+    features: [
+      {
+        title: "Multiple Game Modes",
+        description:
+          "Players can choose between single-player battles against the computer, local two-player matches, and online multiplayer combat.",
+      },
+      {
+        title: "Custom Canvas Game Engine",
+        description:
+          "The combat system is powered by a custom HTML Canvas engine that controls the animation loop, fighter movement, attacks, physics, and rendering.",
+      },
+      {
+        title: "Real-Time Online Battles",
+        description:
+          "WebSocket communication synchronizes keyboard input and combat actions between players during online matches.",
+      },
+      {
+        title: "CPU Decision Engine",
+        description:
+          "Single-player mode includes a custom AI decision engine that controls the opponent's movement and attacks.",
+      },
+      {
+        title: "Match Timer and Health Bars",
+        description:
+          "Each match includes animated health indicators, a countdown timer, and match-result messages.",
+      },
+      {
+        title: "Online Lobby",
+        description:
+          "Authenticated players can enter a shared lobby, see available opponents, and send invitations for online matches.",
+      },
+      {
+        title: "Room Invitations",
+        description:
+          "Players can send, receive, accept, and reject game invitations before being assigned to a private multiplayer room.",
+      },
+      {
+        title: "Disconnect Handling",
+        description:
+          "The server detects disconnected players, informs their opponents, removes inactive users, and cleans up empty game rooms.",
+      },
+      {
+        title: "Containerized Deployment",
+        description:
+          "The frontend and backend are containerized with Docker, served through Nginx, and configured for deployment on AWS.",
+      },
+    ],
+    gitHubUrl: "https://github.com/EshelEyni/fatal-combat",
+    liveInstanceUrl: "https://fatal-combat.esheleyni.com",
+    imageUrl: "/fatal-combat.png",
+    technologies: [
+      "Vue 3",
+      "TypeScript",
+      "Pinia",
+      "HTML Canvas",
+      "WebSockets",
+      "Python",
+      "FastAPI",
+      "SQLModel",
+      "Docker",
+      "AWS",
+    ],
+  },
+  {
+    name: "Roza",
+    description:
+      "Roza is a full-stack writing and book-review platform designed for authors, readers, and literary researchers. It provides structured tools for writing books, developing characters and plotlines, organizing research, and producing detailed book reviews. The application includes a rich-text editor, PDF export, multilingual support, offline capabilities, and a secure REST API.",
+    features: [
+      {
+        title: "Structured Book Writing",
+        description:
+          "Writers can organize books into chapters and manage supporting information such as characters, themes, plotlines, and notes from one workspace.",
+      },
+      {
+        title: "Rich-Text Editor",
+        description:
+          "The Slate-based editor supports headings, paragraphs, block quotes, numbered and bulleted lists, text alignment, bold, italic, and underlined text.",
+      },
+      {
+        title: "Character and Plot Development",
+        description:
+          "Dedicated sections help writers document characters, themes, and plotlines while keeping them connected to the book being developed.",
+      },
+      {
+        title: "Book Review Workspace",
+        description:
+          "Users can create detailed book reviews composed of individual review entries, references, images, and a structured final analysis.",
+      },
+      {
+        title: "Research References",
+        description:
+          "Readers can save quotations, page numbers, notes, and supporting images as references for their literary analysis.",
+      },
+      {
+        title: "Drag-and-Drop Organization",
+        description:
+          "Books, reviews, and supporting content can be reordered through an intuitive drag-and-drop interface.",
+      },
+      {
+        title: "Reading and Editing Modes",
+        description:
+          "Users can switch between focused reading and editing modes, minimize individual sections, or use fullscreen mode for distraction-free work.",
+      },
+      {
+        title: "PDF Export",
+        description:
+          "Book chapters can be exported as styled PDF documents while preserving headings, lists, quotations, text formatting, and alignment.",
+      },
+      {
+        title: "Hebrew and English Support",
+        description:
+          "The interface supports Hebrew and English with automatic language detection, translated content, and right-to-left PDF generation.",
+      },
+      {
+        title: "Image Uploads",
+        description:
+          "Cloudinary integration allows users to upload and attach images to book-review references.",
+      },
+      {
+        title: "Progressive Web App",
+        description:
+          "Roza is installable as a PWA and includes offline support for a more reliable experience across desktop and mobile devices.",
+      },
+    ],
+    gitHubUrl: "https://github.com/EshelEyni/Roza",
+    liveInstanceUrl: "",
+    imageUrl: "/roza.png",
+    technologies: [
+      "React",
+      "TypeScript",
+      "TanStack Query",
+      "Slate",
+      "Sass",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "JWT",
+      "Docker",
+    ],
+  },
+
   {
     name: "Kceli",
     description:
