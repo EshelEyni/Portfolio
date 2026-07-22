@@ -1,17 +1,10 @@
 import { FC } from "react";
-import { scrollToElementById } from "../../../services/utilService";
 import "./About.scss";
 import { InViewSection } from "../../../components/InViewSection/InViewSection";
 import { SectionHeader } from "../../../components/SectionHeader/SectionHeader";
 import { TechnologiesList } from "../../../components/TechnologiesList/TechnologiesList";
 
 export const About: FC = () => {
-  function handleContactClick(
-    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
-  ) {
-    scrollToElementById(e);
-  }
-
   return (
     <section id="about" className="about">
       <SectionHeader
@@ -53,11 +46,13 @@ export const About: FC = () => {
             </div>
 
             <a
-              className="btn btn--animated"
-              href="#contact"
-              onClick={handleContactClick}
+              target="_blank"
+              rel="noreferrer"
+              href="/Eshel Eyni - CV.pdf"
+              download="Eshel Eyni - CV.pdf"
+              className="about__desc__resume__button btn btn--animated"
             >
-              <span>contact</span>
+              <span>Download Resume</span>
             </a>
           </div>
         </InViewSection>
