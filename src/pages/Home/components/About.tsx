@@ -1,9 +1,9 @@
 import { FC } from "react";
-import { scrollToElementById } from "../../services/utilService";
+import { scrollToElementById } from "../../../services/utilService";
 import "./About.scss";
-import { InViewSection } from "../../components/InViewSection/InViewSection";
-import { SectionHeader } from "../../components/SectionHeader/SectionHeader";
-import { TechnologiesList } from "../../components/TechnologiesList/TechnologiesList";
+import { InViewSection } from "../../../components/InViewSection/InViewSection";
+import { SectionHeader } from "../../../components/SectionHeader/SectionHeader";
+import { TechnologiesList } from "../../../components/TechnologiesList/TechnologiesList";
 
 export const About: FC = () => {
   function handleContactClick(

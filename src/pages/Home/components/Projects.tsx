@@ -1,8 +1,8 @@
 import { FC } from "react";
-import { SectionHeader } from "../../components/SectionHeader/SectionHeader";
+import { SectionHeader } from "../../../components/SectionHeader/SectionHeader";
 import "./Projects.scss";
-import { projects } from "../../services/dataService";
-import { ProjectList } from "../../components/ProjectList/ProjectList";
+import { projects } from "../../../services/dataService";
+import { ProjectList } from "../../../components/ProjectList/ProjectList";
 
 export const Projects: FC = () => {
   return (

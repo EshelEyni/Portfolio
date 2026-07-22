@@ -1,12 +1,12 @@
 import { FC, useEffect } from "react";
 import "./Home.scss";
-import { Intro } from "./Intro";
-import { About } from "./About";
-import { Projects } from "./Projects";
-import { Contact } from "./Contact";
-import { Resume } from "./Resume";
+import { Intro } from "./components/Intro";
+import { About } from "./components/About";
+import { Projects } from "./components/Projects";
+import { Contact } from "./components/Contact";
+import { Resume } from "./components/Resume";
 import { useLocation, useNavigate } from "react-router-dom";
-import { Education } from "./Education";
+import { Education } from "./components/Education";
 
 export const Home: FC = () => {
   const location = useLocation();

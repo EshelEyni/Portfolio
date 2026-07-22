@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Project } from "../../services/dataService";
+import { Project } from "../../../services/dataService";
 import "./ProjectPreview.scss";
 import { useNavigate } from "react-router-dom";
 import classNames from "classnames";

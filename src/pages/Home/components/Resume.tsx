@@ -1,7 +1,7 @@
 import { FC } from "react";
-import { SectionHeader } from "../../components/SectionHeader/SectionHeader";
+import { SectionHeader } from "../../../components/SectionHeader/SectionHeader";
 import "./Resume.scss";
-import { InViewSection } from "../../components/InViewSection/InViewSection";
+import { InViewSection } from "../../../components/InViewSection/InViewSection";
 
 export const Resume: FC = () => {
   return (

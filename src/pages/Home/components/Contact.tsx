@@ -1,10 +1,10 @@
 import { FC, useState } from "react";
-import { SectionHeader } from "../../components/SectionHeader/SectionHeader";
+import { SectionHeader } from "../../../components/SectionHeader/SectionHeader";
 import "./Contact.scss";
-import { InViewSection } from "../../components/InViewSection/InViewSection";
+import { InViewSection } from "../../../components/InViewSection/InViewSection";
 import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
-import { BoxLoader } from "../../components/BoxLoader/BoxLoader";
+import { BoxLoader } from "../../../components/BoxLoader/BoxLoader";
 
 type FormValues = {
   name: string;

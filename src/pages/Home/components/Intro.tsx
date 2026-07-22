@@ -1,6 +1,6 @@
 import { FC } from "react";
 import "./Intro.scss";
-import { Sidebar } from "../../components/Sidebar/Sidebar";
+import { Sidebar } from "../../../components/Sidebar/Sidebar";
 
 export const Intro: FC = () => {
   return (
