@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Course } from "../../services/dataService";
+import { Course } from "../../types";
 import "./CourseList.scss";
 
 type CourseListProps = {

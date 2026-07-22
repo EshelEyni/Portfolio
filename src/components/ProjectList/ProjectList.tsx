@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Project } from "../../services/dataService";
+import { Project } from "../../types";
 import { InViewSection } from "../InViewSection/InViewSection";
 import { ProjectPreview } from "../../pages/Home/components/ProjectPreview";
 import "./ProjectList.scss";
