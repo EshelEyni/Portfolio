@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { Project } from "../../types";
 import { InViewSection } from "../InViewSection/InViewSection";
-import { ProjectPreview } from "../../pages/Home/components/ProjectPreview";
+import { ProjectPreview } from "../ProjectPreview/ProjectPreview";
 import "./ProjectList.scss";
 
 type ProjectListProps = {
