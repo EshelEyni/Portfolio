@@ -1,6 +1,8 @@
+@use "../abstracts" as *;
+
 .main-layout {
   display: grid;
-  grid-template-columns: $layoutPadding 1fr $layoutPadding;
+  grid-template-columns: $layout-padding 1fr $layout-padding;
 
   > * {
     grid-column: 2;
@@ -17,14 +19,14 @@
   }
 
   @include tab-layout {
-    @include layoutGTC($break-phone);
+    @include layout-gtc($break-phone);
   }
 
   @include desktop-layout {
-    @include layoutGTC($break-tab-port);
+    @include layout-gtc($break-tab-port);
   }
 
-  @include desktop-layout {
-    @include layoutGTC($break-desktop);
+  @include wide-desktop-layout {
+    @include layout-gtc($break-desktop);
   }
 }

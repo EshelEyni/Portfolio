@@ -1,4 +1,4 @@
-@import "../../styles/main.scss";
+@use "../../styles/abstracts" as *;
 .user-display {
   display: flex;
   align-items: center;

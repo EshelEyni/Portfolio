@@ -1,4 +1,4 @@
-@import "../../styles/main.scss";
+@use "../../styles/abstracts" as *;
 
 .app-header {
   display: flex;

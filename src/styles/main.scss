@@ -1,14 +1,8 @@
-// Setup
-@import "setup/functions";
-@import "setup/mixins";
-@import "setup/typography";
-@import "setup/variables";
-
-// Basics
-@import "basics/helpers";
-@import "basics/layout";
-@import "basics/base";
-@import "basics/animations";
-
-// Components
-@import "components/button";
+// This is the application's single global stylesheet entry point.
+@use "base/custom-properties";
+@use "base/typography";
+@use "basics/helpers";
+@use "basics/layout";
+@use "basics/base";
+@use "basics/animations";
+@use "components/button";

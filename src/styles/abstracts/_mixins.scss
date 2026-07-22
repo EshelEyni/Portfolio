@@ -1,5 +1,6 @@
-/* Media queries Breakpoint mixins */
+@use "variables" as *;
 
+// Breakpoints
 @mixin mobile-layout {
   @media only screen and (max-width: $break-phone) {
     @content;
@@ -18,7 +19,7 @@
   }
 }
 
-@mixin desktop-layout {
+@mixin wide-desktop-layout {
   @media only screen and (min-width: $break-desktop) {
     @content;
   }
@@ -30,32 +31,29 @@
   }
 }
 
-@mixin layoutGTC($max) {
+@mixin layout-gtc($max) {
   grid-template-columns:
-    minmax($layoutPadding, 1fr)
+    minmax($layout-padding, 1fr)
     minmax(auto, $max)
-    minmax($layoutPadding, 1fr);
+    minmax($layout-padding, 1fr);
 }
 
-/* Media  Mixins */
-
-//aspect ratio mixin
 @mixin aspect-ratio($width: 1, $height: 1) {
   position: relative;
   overflow: hidden;
-  &:before {
+
+  &::before {
     content: "";
     display: block;
     width: 100%;
     padding-top: calc($height / $width) * 100%;
   }
+
   > * {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    inset: 0;
   }
+
   > img {
     height: 100%;
     object-fit: cover;
@@ -63,25 +61,17 @@
 }
 
 @mixin scrollbar-hidden {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
   &::-webkit-scrollbar {
     display: none;
-  }
-
-  & {
-    scrollbar-width: none;
-  }
-
-  & {
-    -ms-overflow-style: none;
-  }
-
-  &::-webkit-scrollbar {
     width: 0.2em;
     background-color: transparent;
   }
 }
 
-@mixin progress-bar($height: 5px, $loaderLength: 10s) {
+@mixin progress-bar($height: 5px, $loader-length: 10s) {
   .progress-bar {
     width: 100%;
     height: $height;
@@ -104,15 +94,11 @@
     top: 0;
     left: 0;
     border-radius: 0;
-    animation: animFw $loaderLength linear infinite;
+    animation: anim-fw $loader-length linear infinite;
   }
 
-  @keyframes animFw {
-    0% {
-      width: 0;
-    }
-    100% {
-      width: 100%;
-    }
+  @keyframes anim-fw {
+    0% { width: 0; }
+    100% { width: 100%; }
   }
 }

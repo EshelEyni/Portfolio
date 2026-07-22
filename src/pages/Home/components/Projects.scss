@@ -1,4 +1,4 @@
-@import "../../../styles/main.scss";
+@use "../../../styles/abstracts" as *;
 
 .projects {
   display: flex;

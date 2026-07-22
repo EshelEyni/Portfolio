@@ -1,3 +1,5 @@
+@use "../abstracts" as *;
+
 * {
   box-sizing: border-box;
 }
@@ -20,7 +22,7 @@ html {
   }
 }
 
-@include desktop-layout {
+@include wide-desktop-layout {
   html {
     font-size: 75%;
   }
