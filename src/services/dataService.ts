@@ -52,41 +52,6 @@ export const proffesionalExperience: ProffesionalExperience[] = [
 
 export const skills: Skill[] = [
   {
-    name: "HTML",
-    logo: "/html-logo.png",
-    courseIds: ["1", "2", "3"],
-    projectNames: ["Snapshot", "Symphony", "Chirper", "DevQuiz", "Kceli"],
-    proffesionalExperienceIds: ["1"],
-  },
-  {
-    name: "CSS",
-    logo: "/css-logo.png",
-    courseIds: ["1", "2", "3"],
-    projectNames: ["Snapshot", "Symphony", "Chirper", "DevQuiz", "Kceli"],
-    proffesionalExperienceIds: ["1"],
-  },
-  {
-    name: "SASS",
-    logo: "/sass-logo.png",
-    courseIds: ["1", "3"],
-    projectNames: ["Snapshot", "Symphony", "Chirper", "DevQuiz", "Kceli"],
-    proffesionalExperienceIds: ["1"],
-  },
-  {
-    name: "Tailwind CSS",
-    logo: "/tailwind-logo.png",
-    courseIds: ["6"],
-    projectNames: ["DevQuiz"],
-    proffesionalExperienceIds: [],
-  },
-  {
-    name: "Bootstrap",
-    logo: "/bootstrap-logo.png",
-    courseIds: ["1"],
-    projectNames: [],
-    proffesionalExperienceIds: ["1"],
-  },
-  {
     name: "JavaScript",
     logo: "/javascript-logo.png",
     courseIds: ["1", "4", "5", "6", "7", "10", "11", "12"],
@@ -106,6 +71,20 @@ export const skills: Skill[] = [
     courseIds: ["1"],
     projectNames: [],
     proffesionalExperienceIds: ["1"],
+  },
+  {
+    name: "SASS",
+    logo: "/sass-logo.png",
+    courseIds: ["1", "3"],
+    projectNames: ["Snapshot", "Symphony", "Chirper", "DevQuiz", "Kceli"],
+    proffesionalExperienceIds: ["1"],
+  },
+  {
+    name: "Tailwind CSS",
+    logo: "/tailwind-logo.png",
+    courseIds: ["6"],
+    projectNames: ["DevQuiz"],
+    proffesionalExperienceIds: [],
   },
   {
     name: "React",
@@ -136,13 +115,6 @@ export const skills: Skill[] = [
     proffesionalExperienceIds: [],
   },
   {
-    name: "Express",
-    logo: "/express-logo.png",
-    courseIds: ["1", "7", "9", "10"],
-    projectNames: ["Symphony", "Snapshot", "Chirper", "DevQuiz", "Kceli"],
-    proffesionalExperienceIds: [],
-  },
-  {
     name: "Python",
     logo: "/python-logo.png",
     courseIds: ["15"],
@@ -154,13 +126,6 @@ export const skills: Skill[] = [
     logo: "/mongodb-logo.png",
     courseIds: ["1", "7", "9"],
     projectNames: ["Symphony", "Chirper", "Kceli"],
-    proffesionalExperienceIds: [],
-  },
-  {
-    name: "Mongoose",
-    logo: "/mongoose-logo.png",
-    courseIds: ["7"],
-    projectNames: ["Chirper", "Kceli"],
     proffesionalExperienceIds: [],
   },
   {
@@ -217,7 +182,7 @@ export const skills: Skill[] = [
 export const projects: Project[] = [
   // {
   //   name: "Roza",
-  //   description: "Roza, is an Proze writing, and Review app",
+  //   description: "Roza, is an Proze writing, and Book Review app",
   //   features: [
   //     {
   //       title: "Proze Writing",
