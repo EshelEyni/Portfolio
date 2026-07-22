@@ -1,11 +1,20 @@
-import { FC, useEffect } from "react";
+import { FC, useEffect, type ComponentType } from "react";
 import "./Home.scss";
+import { useLocation, useNavigate } from "react-router-dom";
+import { homeNavigation, type HomeSectionId } from "../../config/navigation";
 import { Intro } from "./components/Intro";
 import { About } from "./components/About";
 import { Projects } from "./components/Projects";
-import { Resume } from "./components/Resume";
-import { useLocation, useNavigate } from "react-router-dom";
 import { Education } from "./components/Education";
+import { Resume } from "./components/Resume";
+
+const sectionComponents: Record<HomeSectionId, ComponentType> = {
+  intro: Intro,
+  resume: Resume,
+  about: About,
+  projects: Projects,
+  education: Education,
+};
 
 export const Home: FC = () => {
   const location = useLocation();
@@ -24,11 +33,19 @@ export const Home: FC = () => {
 
   return (
     <main className="home-page">
-      <Intro />
-      <About />
-      <Projects />
-      <Education />
-      <Resume />
+      {homeNavigation.map(({ id }, index) => {
+        const Component = sectionComponents[id];
+        const tintDirection = index % 2 === 0 ? "down" : "up";
+
+        return (
+          <div
+            className={`home-page__section home-page__section--tint-${tintDirection}`}
+            key={id}
+          >
+            <Component />
+          </div>
+        );
+      })}
     </main>
   );
 };

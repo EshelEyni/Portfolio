@@ -2,6 +2,7 @@ import { FC } from "react";
 import { scrollToElementById } from "../../services/utilService";
 import { useNavigate } from "react-router-dom";
 import "./Nav.scss";
+import { homeNavigation } from "../../config/navigation";
 
 type NavProps = {
   setIsMenuClicked?: (isClicked: boolean) => void;
@@ -10,16 +11,8 @@ type NavProps = {
 export const Nav: FC<NavProps> = ({ setIsMenuClicked }) => {
   const navigate = useNavigate();
 
-  const links = [
-    { href: "#intro", text: "Home" },
-    { href: "#about", text: "About" },
-    { href: "#projects", text: "Projects" },
-    { href: "#education", text: "Education" },
-    { href: "#resume", text: "Resume" },
-  ];
-
   function handleNavLinkClick(
-    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
   ) {
     e.preventDefault();
     setIsMenuClicked?.(false);
@@ -34,14 +27,14 @@ export const Nav: FC<NavProps> = ({ setIsMenuClicked }) => {
   return (
     <nav className="nav">
       <ul className="nav__list">
-        {links.map((link) => (
-          <li key={link.href} className="nav__item">
+        {homeNavigation.map(({ id, label }) => (
+          <li key={id} className="nav__item">
             <a
-              href={link.href}
+              href={`#${id}`}
               onClick={handleNavLinkClick}
               className="nav__link"
             >
-              {link.text}
+              {label}
             </a>
           </li>
         ))}

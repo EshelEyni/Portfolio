@@ -5,3 +5,24 @@
   justify-content: center;
   width: 100%;
 }
+
+.home-page__section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &--tint-down {
+    background: linear-gradient(
+      var(--color-tint-lightest),
+      var(--color-tint-lighter)
+    );
+  }
+
+  &--tint-up {
+    background: linear-gradient(
+      var(--color-tint-lighter),
+      var(--color-tint-lightest)
+    );
+  }
+}
