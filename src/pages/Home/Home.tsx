@@ -3,7 +3,6 @@ import "./Home.scss";
 import { Intro } from "./components/Intro";
 import { About } from "./components/About";
 import { Projects } from "./components/Projects";
-import { Contact } from "./components/Contact";
 import { Resume } from "./components/Resume";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Education } from "./components/Education";
@@ -29,7 +28,6 @@ export const Home: FC = () => {
       <About />
       <Projects />
       <Education />
-      <Contact />
       <Resume />
     </main>
   );
