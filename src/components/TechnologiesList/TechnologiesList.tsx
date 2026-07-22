@@ -2,7 +2,7 @@ import { FC } from "react";
 import { useNavigate } from "react-router-dom";
 import { InViewSection } from "../InViewSection/InViewSection";
 import "./TechnologiesList.scss";
-import { skills } from "../../services/dataService";
+import { skills } from "../../data/skills";
 import classNames from "classnames";
 
 type TechnologiesListProps = {

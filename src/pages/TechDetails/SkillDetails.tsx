@@ -1,15 +1,13 @@
 import { FC, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import {
-  courses,
-  proffesionalExperience,
-  projects,
-  skills,
-} from "../../services/dataService";
+import { courses } from "../../data/courses";
 import { NotFoundMessage } from "../../components/NotFoundMessage/NotFoundMessage";
 import "./SkillDetails.scss";
 import { CourseList } from "../../components/CourseList/CourseList";
 import { ProjectList } from "../../components/ProjectList/ProjectList";
+import { proffesionalExperience } from "../../data/proffesionalExperience";
+import { skills } from "../../data/skills";
+import { projects } from "../../data/projects";
 
 export const SkillDetails: FC = () => {
   const params = useParams();
@@ -17,10 +15,10 @@ export const SkillDetails: FC = () => {
   const skill = skills.find((s) => s.name === name);
   const skillCourses = courses.filter((c) => skill?.courseIds.includes(c.id));
   const skillProjects = projects.filter((p) =>
-    skill?.projectNames.includes(p.name)
+    skill?.projectNames.includes(p.name),
   );
   const skillProffesionalExperience = proffesionalExperience.filter((p) =>
-    skill?.proffesionalExperienceIds.includes(p.id)
+    skill?.proffesionalExperienceIds.includes(p.id),
   );
 
   useEffect(() => {

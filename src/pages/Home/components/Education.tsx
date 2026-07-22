@@ -2,7 +2,7 @@ import { FC } from "react";
 import { SectionHeader } from "../../../components/SectionHeader/SectionHeader";
 import "./Education.scss";
 import { CourseList } from "../../../components/CourseList/CourseList";
-import { courses } from "../../../services/dataService";
+import { courses } from "../../../data/courses";
 
 export const Education: FC = () => {
   return (

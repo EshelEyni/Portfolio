@@ -1,6 +1,6 @@
 import { FC, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { projects } from "../../services/dataService";
+import { projects } from "../../data/projects";
 import "./ProjectDetails.scss";
 import { SectionHeader } from "../../components/SectionHeader/SectionHeader";
 import { InViewSection } from "../../components/InViewSection/InViewSection";
