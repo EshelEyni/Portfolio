@@ -14,6 +14,7 @@ export type Project = {
 export type Course = {
   id: string;
   name: string;
+  provider: "Coding Academy" | "Udemy";
   logo: string;
   year: number;
   imgUrl: string;

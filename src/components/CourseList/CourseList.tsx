@@ -1,5 +1,7 @@
-import { FC } from "react";
+import { FC, useState } from "react";
 import { Course } from "../../types";
+import { CourseCard } from "./components/CourseCard";
+import { CredentialModal } from "./components/CredentialModal";
 import "./CourseList.scss";
 
 type CourseListProps = {
@@ -7,27 +9,26 @@ type CourseListProps = {
 };
 
 export const CourseList: FC<CourseListProps> = ({ courses }) => {
+  const [selectedCourse, setSelectedCourse] = useState<Course | null>(null);
+
   return (
-    <ul className="course-list">
-      {courses.map((course) => (
-        <li className="course-list__item" key={course.id}>
-          <header className="course-list__item__header">
-            <div className="course-list__item__header__logo-container">
-              <img
-                className="course-list__item__header__logo"
-                src={course.logo}
-                alt="logo"
-              />
-            </div>
-            <h3 className="course-list__item__header__title">{`${course.name} - ${course.year}`}</h3>
-          </header>
-          <img
-            className="course-list__item__img"
-            src={course.imgUrl}
-            alt="certifcate"
+    <>
+      <ul className="course-list">
+        {courses.map((course) => (
+          <CourseCard
+            course={course}
+            key={course.id}
+            onViewCredential={setSelectedCourse}
           />
-        </li>
-      ))}
-    </ul>
+        ))}
+      </ul>
+
+      {selectedCourse && (
+        <CredentialModal
+          course={selectedCourse}
+          onClose={() => setSelectedCourse(null)}
+        />
+      )}
+    </>
   );
 };

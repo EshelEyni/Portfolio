@@ -294,7 +294,7 @@ export const projects: Project[] = [
       "Material UI",
       "Google Maps API",
       "Sass",
-      "NodeJS",
+      "Node.JS",
       "TypeScript",
       "Express",
       "JWT",

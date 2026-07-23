@@ -4,6 +4,7 @@ export const courses: Course[] = [
   {
     id: "1",
     name: "Full Stack Development",
+    provider: "Coding Academy",
     logo: "/logos/education/coding-academy-logo.jpg",
     year: 2022,
     imgUrl: "/certificates/certificate - Coding Academy.png",
@@ -11,6 +12,7 @@ export const courses: Course[] = [
   {
     id: "2",
     name: "Build Responsive Real World Websites with HTML and CSS",
+    provider: "Udemy",
     logo: "/logos/education/udemy-logo.png",
     year: 2023,
     imgUrl:
@@ -19,6 +21,7 @@ export const courses: Course[] = [
   {
     id: "3",
     name: "Advanced CSS and Sass: Flexbox, Grid, Animations and More!",
+    provider: "Udemy",
     logo: "/logos/education/udemy-logo.png",
     year: 2023,
     imgUrl:
@@ -27,6 +30,7 @@ export const courses: Course[] = [
   {
     id: "4",
     name: "The Complete JavaScript Course 2021: From Zero to Expert!",
+    provider: "Udemy",
     logo: "/logos/education/udemy-logo.png",
     year: 2023,
     imgUrl:
@@ -35,6 +39,7 @@ export const courses: Course[] = [
   {
     id: "5",
     name: "Understanding TypeScript",
+    provider: "Udemy",
     logo: "/logos/education/udemy-logo.png",
     year: 2023,
     imgUrl: "/certificates/certificate - Understanding TypeScript.jpg",
@@ -42,6 +47,7 @@ export const courses: Course[] = [
   {
     id: "6",
     name: "The Ultimate React Course 2023: React, Redux & More",
+    provider: "Udemy",
     logo: "/logos/education/udemy-logo.png",
     year: 2023,
     imgUrl:
@@ -50,6 +56,7 @@ export const courses: Course[] = [
   {
     id: "7",
     name: "Node.js, Express, MongoDB & More: The Complete Bootcamp 2023",
+    provider: "Udemy",
     logo: "/logos/education/udemy-logo.png",
     year: 2023,
     imgUrl:
@@ -58,6 +65,7 @@ export const courses: Course[] = [
   {
     id: "8",
     name: "The Complete SQL Bootcamp: Go from Zero to Hero",
+    provider: "Udemy",
     logo: "/logos/education/udemy-logo.png",
     year: 2023,
     imgUrl: "/certificates/certificate - The Complete SQL Bootcamp Go from Zero to Hero.jpg",
@@ -65,6 +73,7 @@ export const courses: Course[] = [
   {
     id: "9",
     name: "MongoDB - The Complete Developer's Guide 2023",
+    provider: "Udemy",
     logo: "/logos/education/udemy-logo.png",
     year: 2023,
     imgUrl: "/certificates/certificate - MongoDB The Complete Developer's Guide 2023.jpg",
@@ -72,6 +81,7 @@ export const courses: Course[] = [
   {
     id: "10",
     name: "JavaScript Unit Testing - The Practical Guide",
+    provider: "Udemy",
     logo: "/logos/education/udemy-logo.png",
     year: 2023,
     imgUrl: "/certificates/certificate - JavaScript Unit Testing The Practical Guide.jpg",
@@ -79,6 +89,7 @@ export const courses: Course[] = [
   {
     id: "11",
     name: "Unit Testing for Typescript & Node.js Developers With Jest",
+    provider: "Udemy",
     logo: "/logos/education/udemy-logo.png",
     year: 2023,
     imgUrl:
@@ -87,6 +98,7 @@ export const courses: Course[] = [
   {
     id: "12",
     name: "Progressive Web Apps (PWA) - The Complete Guide",
+    provider: "Udemy",
     logo: "/logos/education/udemy-logo.png",
     year: 2023,
     imgUrl: "/certificates/certificate - Progressive Web Apps (PWA) The Complete Guide.jpg",
@@ -94,6 +106,7 @@ export const courses: Course[] = [
   {
     id: "13",
     name: "The Git & Github Bootcamp",
+    provider: "Udemy",
     logo: "/logos/education/udemy-logo.png",
     year: 2024,
     imgUrl: "/certificates/certificate - The Git & Github Bootcamp.jpg",
@@ -101,6 +114,7 @@ export const courses: Course[] = [
   {
     id: "14",
     name: "Javascript Algorithms and Data Structures Masterclass",
+    provider: "Udemy",
     logo: "/logos/education/udemy-logo.png",
     year: 2024,
     imgUrl:
@@ -109,6 +123,7 @@ export const courses: Course[] = [
   {
     id: "15",
     name: "The Complete Python Pro Bootcamp",
+    provider: "Udemy",
     logo: "/logos/education/udemy-logo.png",
     year: 2024,
     imgUrl: "/certificates/certificate - The Complete Python Pro Bootcamp.jpg",
@@ -116,13 +131,15 @@ export const courses: Course[] = [
   {
     id: "16",
     name: "Docker and Kubernetes: The Complete Guide",
+    provider: "Udemy",
     logo: "/logos/education/udemy-logo.png",
     year: 2024,
     imgUrl: "/certificates/certificate - Docker amd kubernetes The Complete Guide.jpg",
   },
   {
     id: "17",
-    name: "Microservices with Node JS and React.jpg",
+    name: "Microservices with Node.js and React",
+    provider: "Udemy",
     logo: "/logos/education/udemy-logo.png",
     year: 2024,
     imgUrl: "/certificates/certificate - Microservices with Node JS and React.jpg",
