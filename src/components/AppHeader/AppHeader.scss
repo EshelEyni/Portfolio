@@ -23,7 +23,7 @@
     display: none;
   }
 
-  @include desktop-layout {
+  @include wide-desktop-layout {
     padding: 0.35rem 1rem;
 
     .nav {
