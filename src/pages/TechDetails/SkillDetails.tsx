@@ -12,7 +12,7 @@ import { projects } from "../../data/projects";
 export const SkillDetails: FC = () => {
   const params = useParams();
   const { name } = params;
-  const skill = skills.find((s) => s.name === name);
+  const skill = skills.find((s) => s.name.toLowerCase() === name?.toLowerCase());
   const skillCourses = courses.filter((c) => skill?.courseIds.includes(c.id));
   const skillProjects = projects.filter((p) =>
     skill?.projectNames.includes(p.name),
@@ -64,9 +64,6 @@ export const SkillDetails: FC = () => {
                     alt={`${p.companyName} logo`}
                     className="skill-details__experience-header-logo"
                   />
-                  <h2 className="skill-details__experience-header-title">
-                    {`${p.companyName}`}
-                  </h2>
                 </header>
                 <h3 className="skill-details__experience-position">{`${p.position} (${dateTitle})`}</h3>
                 <p className="skill-details__experience-description">
