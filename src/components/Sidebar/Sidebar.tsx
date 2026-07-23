@@ -5,7 +5,7 @@ import "./Sidebar.scss";
 export const Sidebar: FC = () => {
   return (
     <aside className="side-bar">
-      <SocialLinks />
+      <SocialLinks tooltipPosition="right" />
     </aside>
   );
 };
