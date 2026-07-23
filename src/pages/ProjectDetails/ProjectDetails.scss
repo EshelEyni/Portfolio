@@ -15,7 +15,7 @@
   .section-header {
     p {
       text-align: start;
-      line-height: 1.45;
+      line-height: var(--line-height-body);
     }
   }
 
@@ -42,8 +42,9 @@
     padding: 0 5%;
 
     &__title {
-      font-size: 3.5rem;
-      font-weight: 600;
+      font-size: var(--font-size-heading);
+      font-weight: 700;
+      line-height: var(--line-height-heading);
       text-align: start;
       color: var(--color-text-primary);
     }
@@ -80,13 +81,14 @@
       }
 
       &__title {
-        font-weight: 600;
-        line-height: 1;
+        font-weight: 700;
+        line-height: inherit;
       }
 
       &__description {
         display: inline-block;
-        line-height: 1.45;
+        font-size: var(--font-size-body);
+        line-height: var(--line-height-body);
       }
     }
   }
@@ -102,11 +104,7 @@
           }
 
           span {
-            font-size: 2.5rem;
-
-            @include desktop-layout {
-              font-size: 1.8rem;
-            }
+            font-size: var(--font-size-small);
           }
         }
       }

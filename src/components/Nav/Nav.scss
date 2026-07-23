@@ -51,8 +51,9 @@
       a {
         backface-visibility: hidden;
         display: inline-block;
-        font-size: 2rem;
-        font-weight: 400;
+        font-size: var(--font-size-small);
+        font-weight: 500;
+        letter-spacing: var(--letter-spacing-label);
         padding: 0.5rem 1rem;
         text-transform: uppercase;
         color: inherit;

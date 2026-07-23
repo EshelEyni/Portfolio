@@ -44,7 +44,7 @@ export const SkillDetails: FC = () => {
       {skillProfessionalExperience.length > 0 && (
         <section className="skill-details__section">
           <h2 className="skill-details__section-title">
-            Proffesional Experience
+            Professional Experience
           </h2>
 
           {skillProfessionalExperience.map((p) => {

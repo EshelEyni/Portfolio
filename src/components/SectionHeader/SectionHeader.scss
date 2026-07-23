@@ -10,12 +10,10 @@
 
   h1 {
     text-transform: uppercase;
-    font-size: 7.5rem;
+    font-size: var(--font-size-title);
+    line-height: var(--line-height-heading);
+    letter-spacing: 0.01em;
     color: var(--color-text-primary);
-
-    @include desktop-layout {
-      font-size: 5.5rem;
-    }
   }
 
   span {
@@ -27,6 +25,8 @@
 
   p {
     color: var(--color-accent-medium);
+    font-size: var(--font-size-body-large);
+    line-height: var(--line-height-body);
     text-align: center;
     margin: 0 2rem;
     max-width: 75rem;

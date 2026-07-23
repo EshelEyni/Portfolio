@@ -20,10 +20,10 @@
 
   .section-header h1 {
     max-width: 100%;
-    font-size: clamp(3.6rem, 11vw, 7.5rem);
-    line-height: 1.08;
+    font-size: var(--font-size-title);
+    line-height: var(--line-height-heading);
     text-align: center;
-    overflow-wrap: anywhere;
+    overflow-wrap: normal;
   }
 
   &__timeline {
@@ -119,16 +119,16 @@
 
     h2 {
       color: var(--color-text-primary);
-      font-size: 3rem;
-      line-height: 1.15;
+      font-size: var(--font-size-heading);
+      line-height: var(--line-height-heading);
     }
   }
 
   &__period {
     color: var(--color-shade-dark);
-    font-size: 1.8rem;
+    font-size: var(--font-size-label);
     font-weight: 700;
-    letter-spacing: 0.12em;
+    letter-spacing: var(--letter-spacing-label);
     text-transform: uppercase;
   }
 
@@ -137,15 +137,15 @@
     flex-wrap: wrap;
     gap: 0.8rem;
     color: var(--color-accent-dark);
-    font-size: 2.2rem;
-    font-weight: 600;
+    font-size: var(--font-size-subheading);
+    font-weight: 500;
   }
 
   &__summary {
     color: var(--color-accent-darker);
-    font-size: 2rem;
-    font-weight: 600;
-    line-height: 1.65;
+    font-size: var(--font-size-body-large);
+    font-weight: 500;
+    line-height: var(--line-height-body);
   }
 
   &__achievements {
@@ -154,8 +154,8 @@
     gap: 1.3rem;
     padding-left: 2.3rem;
     color: var(--color-accent-dark);
-    font-size: 1.8rem;
-    line-height: 1.65;
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-body);
 
     li {
       list-style: inside;
@@ -171,7 +171,7 @@
     &__list {
       &__item {
         span {
-          font-size: 2rem;
+          font-size: var(--font-size-small);
         }
       }
     }

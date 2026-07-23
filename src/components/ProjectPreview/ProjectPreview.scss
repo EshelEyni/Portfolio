@@ -44,41 +44,26 @@
     gap: 2rem;
 
     &__title {
-      font-size: 6.5rem;
+      font-size: var(--font-size-heading);
       font-weight: 700;
+      line-height: var(--line-height-heading);
       color: var(--color-accent-darker);
-
-      @include tab-layout {
-        font-size: 5rem;
-      }
-
-      @include desktop-layout {
-        font-size: 4rem;
-      }
     }
 
     &__description {
-      font-size: 3.5rem;
+      font-size: var(--font-size-body);
+      line-height: var(--line-height-body);
       font-weight: 400;
       color: var(--color-text-primary);
-
-      @include desktop-layout {
-        font-size: 1.7rem;
-      }
-
-      @include large-desktop-layout {
-        font-size: 2rem;
-      }
     }
 
     .btn {
       align-self: center;
       width: 15rem;
       height: 4.5rem;
-      font-size: 1.7rem;
+      font-size: var(--font-size-small);
 
       @include desktop-layout {
-        font-size: 1.2rem;
         width: 12rem;
         height: 3.2rem;
       }
@@ -86,7 +71,6 @@
       @include large-desktop-layout {
         width: 15rem;
         height: 4.5rem;
-        font-size: 1.7rem;
       }
     }
   }

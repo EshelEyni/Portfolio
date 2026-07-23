@@ -135,8 +135,9 @@
       &:link,
       &:visited {
         display: inline-block;
-        font-size: 3rem;
-        font-weight: 300;
+        font-size: var(--font-size-body-large);
+        font-weight: 500;
+        letter-spacing: var(--letter-spacing-label);
         padding: 1rem 2rem;
         color: var(--color-white);
         text-decoration: none;

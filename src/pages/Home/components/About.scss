@@ -32,13 +32,10 @@
 
     > * {
       h2 {
-        font-size: 5.5rem;
+        font-size: var(--font-size-heading);
+        line-height: var(--line-height-heading);
         text-transform: capitalize;
         color: var(--color-text-primary);
-
-        @include desktop-layout {
-          font-size: 4rem;
-        }
       }
     }
 

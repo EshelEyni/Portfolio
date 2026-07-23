@@ -19,18 +19,17 @@
 
     h1 {
       text-transform: uppercase;
-      font-size: 7.5rem;
+      font-size: var(--font-size-display);
+      line-height: 1.08;
+      letter-spacing: -0.035em;
       text-align: center;
       color: var(--color-text-primary);
       margin: 0 2rem;
-
-      @include desktop-layout {
-        font-size: 5.5rem;
-      }
     }
 
     p {
       color: var(--color-accent-medium);
+      font-size: var(--font-size-body-large);
       text-align: center;
       margin: 0 2rem;
       max-width: 75rem;

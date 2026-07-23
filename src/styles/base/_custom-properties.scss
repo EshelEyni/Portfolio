@@ -13,7 +13,19 @@
   --color-accent-darker: #333;
   --color-background: #fff;
   --color-text-primary: #333;
-  --font-primary: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-primary: "Ubuntu", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-size-display: clamp(4.2rem, 7vw, 5.8rem);
+  --font-size-title: clamp(3.4rem, 5vw, 4.8rem);
+  --font-size-heading: clamp(2.6rem, 3.5vw, 3.4rem);
+  --font-size-subheading: clamp(2rem, 2.5vw, 2.4rem);
+  --font-size-body-large: clamp(1.8rem, 2vw, 2rem);
+  --font-size-body: 1.8rem;
+  --font-size-small: 1.5rem;
+  --font-size-label: 1.4rem;
+  --line-height-heading: 1.15;
+  --line-height-body: 1.65;
+  --letter-spacing-heading: -0.025em;
+  --letter-spacing-label: 0.08em;
   --color-black: #000;
   --color-white: #fff;
 }

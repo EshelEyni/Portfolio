@@ -39,7 +39,8 @@
   }
 
   &__title {
-    font-size: 7rem;
+    font-size: var(--font-size-display);
+    line-height: var(--line-height-heading);
     text-align: start;
     color: var(--color-text-primary);
   }
@@ -51,7 +52,8 @@
     width: 100%;
 
     &-title {
-      font-size: 3.5rem;
+      font-size: var(--font-size-heading);
+      line-height: var(--line-height-heading);
       text-align: start;
       color: var(--color-text-primary);
     }
@@ -78,24 +80,18 @@
   }
 
   &__experience-position {
-    font-size: 3rem;
-    font-weight: 600;
+    font-size: var(--font-size-subheading);
+    font-weight: 700;
+    line-height: var(--line-height-heading);
     text-align: start;
     color: var(--color-text-primary);
-    
-    @include desktop-layout {
-      font-size: 2rem;
-    }
   }
 
   &__experience-description {
     text-align: start;
-    font-size: 2.5rem;
-    color: var(--color-text-secondary);
-
-    @include desktop-layout {
-      font-size: 1.5rem;
-    }
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-body);
+    color: var(--color-accent-dark);
   }
 
   .course-list,
