@@ -62,18 +62,6 @@
   gap: 2.4rem;
   width: 100%;
   padding: 2.5rem 2rem;
-  border: 1px solid rgba(207, 113, 31, 0.18);
-  border-radius: 2rem;
-  background: rgba(255, 255, 255, 0.78);
-  box-shadow: 0 1.8rem 5rem rgba(69, 38, 10, 0.08);
-  backdrop-filter: blur(10px);
-  transition:
-    transform 250ms ease,
-    box-shadow 250ms ease;
-
-  &:hover {
-    box-shadow: 0 2.2rem 6rem rgba(69, 38, 10, 0.25);
-  }
 
   @include desktop-layout {
     padding: 3.5rem 4rem;
@@ -168,35 +156,24 @@
     color: var(--color-accent-dark);
     font-size: 1.8rem;
     line-height: 1.65;
-    list-style: disc;
 
     li {
-      list-style: circle;
-      padding-left: 0.5rem;
+      list-style: inside;
 
       &::marker {
-        color: var(--color-primary);
+        color: var(--color-accent-dark);
         font-size: 1.2em;
       }
     }
   }
 
-  &__technologies {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.9rem;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-
-    li {
-      padding: 0.7rem 1.2rem;
-      border: 1px solid rgba(207, 113, 31, 0.2);
-      border-radius: 99px;
-      background: var(--color-tint-lightest);
-      color: var(--color-shade-darkest);
-      font-size: 1.35rem;
-      font-weight: 600;
+  & .technologies {
+    &__list {
+      &__item {
+        span {
+          font-size: 2rem;
+        }
+      }
     }
   }
 }

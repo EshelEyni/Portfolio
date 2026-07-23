@@ -1,4 +1,4 @@
-import { ProfessionalExperience   } from "../types";
+import { ProfessionalExperience } from "../types";
 
 export const professionalExperience: ProfessionalExperience[] = [
   {
@@ -15,7 +15,14 @@ export const professionalExperience: ProfessionalExperience[] = [
       "Create responsive, information-dense analytics experiences that make complex design alternatives easy to compare across devices and exported formats.",
       "Deliver features end to end, resolve production issues, and continuously improve application performance and maintainability.",
     ],
-    technologies: ["Vue", "TypeScript", "Python", "AI", "Data Visualization"],
+    technologies: [
+      "Vue",
+      "TypeScript",
+      "Python",
+      "Docker",
+      "AI",
+      "Data Visualization",
+    ],
     logo: "/qbiq-logo.svg",
     companyUrl: "https://www.qbiq.ai/",
   },

@@ -3,6 +3,7 @@ import { SectionHeader } from "../../../components/SectionHeader/SectionHeader";
 import { InViewSection } from "../../../components/InViewSection/InViewSection";
 import { professionalExperience } from "../../../data/professionalExperience";
 import "./ProfessionalExperience.scss";
+import { TechnologiesList } from "../../../components/TechnologiesList/TechnologiesList";
 
 export const ProfessionalExperience: FC = () => {
   return (
@@ -55,14 +56,7 @@ export const ProfessionalExperience: FC = () => {
                 ))}
               </ul>
 
-              <ul
-                className="experience-card__technologies"
-                aria-label="Technologies used"
-              >
-                {experience.technologies.map((technology) => (
-                  <li key={technology}>{technology}</li>
-                ))}
-              </ul>
+              <TechnologiesList technologies={experience.technologies} />
             </article>
           </InViewSection>
         ))}
