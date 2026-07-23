@@ -1,0 +1,202 @@
+@use "../../../styles/abstracts" as *;
+
+.professional-experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6rem;
+  width: 100%;
+  min-height: 100vh;
+  padding: 8rem 1.5rem;
+
+  @include desktop-layout {
+    gap: 9rem;
+    padding: 10rem 3.5rem;
+  }
+
+  .section {
+    width: 100%;
+  }
+
+  .section-header h1 {
+    max-width: 100%;
+    font-size: clamp(3.6rem, 11vw, 7.5rem);
+    line-height: 1.08;
+    text-align: center;
+    overflow-wrap: anywhere;
+  }
+
+  &__timeline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: min(100%, 105rem);
+    padding-left: 2.2rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 2.5rem;
+      bottom: 2.5rem;
+      left: 0.6rem;
+      width: 0.3rem;
+      border-radius: 99px;
+      background: linear-gradient(
+        var(--color-primary),
+        var(--color-shade-dark)
+      );
+    }
+
+    @include desktop-layout {
+      gap: 4rem;
+      padding-left: 4rem;
+    }
+  }
+}
+
+.experience-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  width: 100%;
+  padding: 2.5rem 2rem;
+  border: 1px solid rgba(207, 113, 31, 0.18);
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 1.8rem 5rem rgba(69, 38, 10, 0.08);
+  backdrop-filter: blur(10px);
+  transition:
+    transform 250ms ease,
+    box-shadow 250ms ease;
+
+  &:hover {
+    box-shadow: 0 2.2rem 6rem rgba(69, 38, 10, 0.25);
+  }
+
+  @include desktop-layout {
+    padding: 3.5rem 4rem;
+  }
+
+  &__marker {
+    position: absolute;
+    top: 3.2rem;
+    left: -2.45rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 0.35rem solid var(--color-tint-lightest);
+    border-radius: 50%;
+    background: var(--color-primary);
+    box-shadow: 0 0 0 0.3rem var(--color-shade-dark);
+
+    @include desktop-layout {
+      left: -4.15rem;
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+    @include mobile-layout {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+
+  &__logo {
+    display: grid;
+    flex: 0 0 auto;
+    place-items: center;
+    width: 18rem;
+    height: 9rem;
+    padding: 1.5rem;
+    border-radius: 1.4rem;
+    background: var(--color-white);
+    box-shadow: inset 0 0 0 1px rgba(69, 38, 10, 0.08);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+
+    h2 {
+      color: var(--color-text-primary);
+      font-size: 3rem;
+      line-height: 1.15;
+    }
+  }
+
+  &__period {
+    color: var(--color-shade-dark);
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  &__company {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    color: var(--color-accent-dark);
+    font-size: 2.2rem;
+    font-weight: 600;
+  }
+
+  &__summary {
+    color: var(--color-accent-darker);
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.65;
+  }
+
+  &__achievements {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    padding-left: 2.3rem;
+    color: var(--color-accent-dark);
+    font-size: 1.8rem;
+    line-height: 1.65;
+    list-style: disc;
+
+    li {
+      list-style: circle;
+      padding-left: 0.5rem;
+
+      &::marker {
+        color: var(--color-primary);
+        font-size: 1.2em;
+      }
+    }
+  }
+
+  &__technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      padding: 0.7rem 1.2rem;
+      border: 1px solid rgba(207, 113, 31, 0.2);
+      border-radius: 99px;
+      background: var(--color-tint-lightest);
+      color: var(--color-shade-darkest);
+      font-size: 1.35rem;
+      font-weight: 600;
+    }
+  }
+}

@@ -7,11 +7,13 @@ import { About } from "./components/About";
 import { Projects } from "./components/Projects";
 import { Education } from "./components/Education";
 import { Resume } from "./components/Resume";
+import { ProfessionalExperience } from "./components/ProfessionalExperience";
 
 const sectionComponents: Record<HomeSectionId, ComponentType> = {
   intro: Intro,
   resume: Resume,
   about: About,
+  experience: ProfessionalExperience,
   projects: Projects,
   education: Education,
 };

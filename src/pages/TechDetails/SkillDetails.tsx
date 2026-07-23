@@ -5,7 +5,7 @@ import { NotFoundMessage } from "../../components/NotFoundMessage/NotFoundMessag
 import "./SkillDetails.scss";
 import { CourseList } from "../../components/CourseList/CourseList";
 import { ProjectList } from "../../components/ProjectList/ProjectList";
-import { proffesionalExperience } from "../../data/proffesionalExperience";
+import { professionalExperience } from "../../data/professionalExperience";
 import { skills } from "../../data/skills";
 import { projects } from "../../data/projects";
 
@@ -17,8 +17,8 @@ export const SkillDetails: FC = () => {
   const skillProjects = projects.filter((p) =>
     skill?.projectNames.includes(p.name),
   );
-  const skillProffesionalExperience = proffesionalExperience.filter((p) =>
-    skill?.proffesionalExperienceIds.includes(p.id),
+  const skillProfessionalExperience = professionalExperience.filter((p) =>
+    skill?.professionalExperienceIds.includes(p.id),
   );
 
   useEffect(() => {
@@ -41,13 +41,13 @@ export const SkillDetails: FC = () => {
         </div>
       </header>
 
-      {skillProffesionalExperience.length > 0 && (
+      {skillProfessionalExperience.length > 0 && (
         <section className="skill-details__section">
           <h2 className="skill-details__section-title">
             Proffesional Experience
           </h2>
 
-          {skillProffesionalExperience.map((p) => {
+          {skillProfessionalExperience.map((p) => {
             const dateTitle = `${new Date(p.startDate).getFullYear()} - ${
               p.endDate === "Present"
                 ? p.endDate

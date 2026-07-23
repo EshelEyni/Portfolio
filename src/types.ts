@@ -24,15 +24,19 @@ export type Skill = {
   logo: string;
   courseIds: string[];
   projectNames: string[];
-  proffesionalExperienceIds: string[];
+  professionalExperienceIds: string[];
 };
 
-export type ProffesionalExperience = {
+export type ProfessionalExperience = {
   id: string;
   companyName: string;
   position: string;
   startDate: string;
   endDate: string;
+  location: string;
   description: string;
+  achievements: string[];
+  technologies: string[];
   logo: string;
+  companyUrl: string;
 };
