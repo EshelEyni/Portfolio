@@ -54,7 +54,7 @@ export const projects: Project[] = [
     ],
     gitHubUrl: "https://github.com/EshelEyni/fatal-combat",
     liveInstanceUrl: "https://fatal-combat.esheleyni.com",
-    imageUrl: "/fatal-combat.png",
+    imageUrl: "/projects/fatal-combat.png",
     technologies: [
       "Vue 3",
       "TypeScript",
@@ -131,7 +131,7 @@ export const projects: Project[] = [
     ],
     gitHubUrl: "https://github.com/EshelEyni/Roza",
     liveInstanceUrl: "",
-    imageUrl: "/roza.png",
+    imageUrl: "/projects/roza.png",
     technologies: [
       "React",
       "TypeScript",
@@ -204,7 +204,7 @@ export const projects: Project[] = [
     ],
     gitHubUrl: "https://github.com/EshelEyni/Kceli",
     liveInstanceUrl: "https://kceli.esheleyni.com/home",
-    imageUrl: "/kceli.png",
+    imageUrl: "/projects/kceli.png",
     technologies: [
       "React",
       "TypeScript",
@@ -240,7 +240,7 @@ export const projects: Project[] = [
     ],
     gitHubUrl: "https://github.com/EshelEyni/DevQuiz",
     liveInstanceUrl: "https://devquiz.esheleyni.com/home",
-    imageUrl: "/devQuiz.png",
+    imageUrl: "/projects/devQuiz.png",
     technologies: [
       "React",
       "TypeScript",
@@ -284,7 +284,7 @@ export const projects: Project[] = [
     ],
     gitHubUrl: "https://github.com/EshelEyni/Chirper",
     liveInstanceUrl: "",
-    imageUrl: "/chirper.png",
+    imageUrl: "/projects/chirper.png",
     technologies: [
       "React",
       "TypeScript",
@@ -379,7 +379,7 @@ export const projects: Project[] = [
     ],
     gitHubUrl: "https://github.com/EshelEyni/Snapshot",
     liveInstanceUrl: "https://snapshot.esheleyni.com/#/",
-    imageUrl: "/snapshot.png",
+    imageUrl: "/projects/snapshot.png",
     technologies: [
       "SQLite3",
       "Express",
@@ -436,7 +436,7 @@ export const projects: Project[] = [
     ],
     gitHubUrl: "https://github.com/EshelEyni/Symphony",
     liveInstanceUrl: "https://symphony.esheleyni.com/",
-    imageUrl: "/symphony.png",
+    imageUrl: "/projects/symphony.png",
     technologies: [
       "React",
       "Sass",

@@ -48,7 +48,7 @@ export const About: FC = () => {
             <a
               target="_blank"
               rel="noreferrer"
-              href="/Eshel Eyni - CV.pdf"
+              href="/documents/Eshel Eyni - CV.pdf"
               download="Eshel Eyni - CV.pdf"
               className="about__desc__resume__button btn btn--animated"
             >

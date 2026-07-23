@@ -23,7 +23,7 @@ export const professionalExperience: ProfessionalExperience[] = [
       "AI",
       "Data Visualization",
     ],
-    logo: "/qbiq-logo.svg",
+    logo: "/logos/companies/qbiq-logo.svg",
     companyUrl: "https://www.qbiq.ai/",
   },
   {
@@ -49,7 +49,7 @@ export const professionalExperience: ProfessionalExperience[] = [
       "Geospatial",
       "Real-Time Systems",
     ],
-    logo: "/webiks-logo.svg",
+    logo: "/logos/companies/webiks-logo.svg",
     companyUrl: "https://www.webiks.com/",
   },
   {
@@ -67,7 +67,7 @@ export const professionalExperience: ProfessionalExperience[] = [
       "Delivered new features and user interfaces across XSLT and jQuery, and authored clear technical specifications in Axosoft.",
     ],
     technologies: ["SQL Server", "XSLT", "jQuery", "DevExpress", "Axosoft"],
-    logo: "/idmr-logo.png",
+    logo: "/logos/companies/idmr-logo.png",
     companyUrl: "https://www.idmr-solutions.com/",
   },
 ];
