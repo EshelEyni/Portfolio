@@ -9,7 +9,7 @@ export const Projects: FC = () => {
     <section id="projects" className="projects">
       <SectionHeader
         title="projects"
-        description="Here you can find some of my projects. Click on a project to learn more about it."
+        description="Selected full-stack projects spanning real-time systems, AI integrations, creative tools, and interactive experiences."
       />
 
       <ProjectList projects={projects} />

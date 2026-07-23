@@ -14,7 +14,7 @@ export const NotFoundMessage: FC<NotFoundMessageProps> = ({ entityName }) => {
 
   return (
     <div className="project-details__not-found-message">
-      <p>{`🔍 Oops! ${entityName} not found.`}</p>
+      <p>{`${entityName} not found.`}</p>
       <button onClick={onGoBack} className="btn btn-animated">
         Go back
       </button>

@@ -11,13 +11,13 @@ export const ProjectDetails: FC = () => {
   const params = useParams<{ name: string }>();
 
   const { name } = params;
-  const porject = projects.find((p) => p.name === name);
+  const project = projects.find((p) => p.name === name);
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
 
-  if (!porject)
+  if (!project)
     return (
       <main className="project-details">
         <NotFoundMessage entityName="Project" />
@@ -26,27 +26,27 @@ export const ProjectDetails: FC = () => {
 
   return (
     <main className="project-details">
-      <SectionHeader title={porject.name} description={porject.description} />
+      <SectionHeader title={project.name} description={project.description} />
 
       <InViewSection>
         <div className="project-details__links">
           <a
-            href={porject.gitHubUrl}
+            href={project.gitHubUrl}
             target="_blank"
             rel="noreferrer"
             className="project-details__github-link btn btn-animated"
           >
-            GitHub
+            View source
           </a>
 
-          {porject.liveInstanceUrl && (
+          {project.liveInstanceUrl && (
             <a
-              href={porject.liveInstanceUrl}
+              href={project.liveInstanceUrl}
               target="_blank"
               rel="noreferrer"
               className="project-details__github-link btn btn-animated"
             >
-              Live Instance
+              Live demo
             </a>
           )}
         </div>
@@ -55,8 +55,8 @@ export const ProjectDetails: FC = () => {
       <InViewSection>
         <img
           className="project-details__image"
-          src={porject.imageUrl}
-          alt={porject.name}
+          src={project.imageUrl}
+          alt={`${project.name} interface`}
         />
       </InViewSection>
 
@@ -66,7 +66,7 @@ export const ProjectDetails: FC = () => {
         </InViewSection>
         <InViewSection>
           <ul className="project-details__features__list">
-            {porject.features.map((feature) => (
+            {project.features.map((feature) => (
               <li
                 className="project-details__features__item"
                 key={feature.title}
@@ -86,9 +86,9 @@ export const ProjectDetails: FC = () => {
 
       <div className="project-details__technologies">
         <InViewSection>
-          <h3 className="project-details__technologies__title">Technologies</h3>
+          <h3 className="project-details__technologies__title">Tech stack</h3>
         </InViewSection>
-        <TechnologiesList technologies={porject.technologies} />
+        <TechnologiesList technologies={project.technologies} />
       </div>
     </main>
   );

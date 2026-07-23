@@ -4,7 +4,7 @@ export const projects: Project[] = [
   {
     name: "Fatal Combat",
     description:
-      "Fatal Combat is a retro-style 2D fighting game featuring single-player, local multiplayer, and real-time online battles. It combines a custom canvas-based game engine with a Vue frontend and FastAPI backend, supporting animated fighters, CPU-controlled opponents, multiplayer invitations, synchronized combat controls, and secure user accounts.",
+      "A retro 2D fighting game with a custom Canvas engine, CPU opponents, and real-time online multiplayer. Built with Vue, FastAPI, and WebSockets, it features secure accounts, matchmaking, synchronized combat, and containerized deployment.",
     features: [
       {
         title: "Multiple Game Modes",
@@ -32,19 +32,14 @@ export const projects: Project[] = [
           "Each match includes animated health indicators, a countdown timer, and match-result messages.",
       },
       {
-        title: "Online Lobby",
+        title: "Online Lobby and Matchmaking",
         description:
-          "Authenticated players can enter a shared lobby, see available opponents, and send invitations for online matches.",
-      },
-      {
-        title: "Room Invitations",
-        description:
-          "Players can send, receive, accept, and reject game invitations before being assigned to a private multiplayer room.",
+          "Authenticated players can find available opponents, exchange match invitations, and join private multiplayer rooms.",
       },
       {
         title: "Disconnect Handling",
         description:
-          "The server detects disconnected players, informs their opponents, removes inactive users, and cleans up empty game rooms.",
+          "The server detects dropped connections, notifies opponents, and cleans up inactive players and empty rooms.",
       },
       {
         title: "Containerized Deployment",
@@ -71,7 +66,7 @@ export const projects: Project[] = [
   {
     name: "Roza",
     description:
-      "Roza is a full-stack writing and book-review platform designed for authors, readers, and literary researchers. It provides structured tools for writing books, developing characters and plotlines, organizing research, and producing detailed book reviews. The application includes a rich-text editor, PDF export, multilingual support, offline capabilities, and a secure REST API.",
+      "A full-stack workspace for authors and literary researchers to write books, develop characters and plotlines, organize research, and create structured reviews. Features include rich-text editing, multilingual and offline support, image uploads, and styled PDF export.",
     features: [
       {
         title: "Structured Book Writing",
@@ -84,9 +79,9 @@ export const projects: Project[] = [
           "The Slate-based editor supports headings, paragraphs, block quotes, numbered and bulleted lists, text alignment, bold, italic, and underlined text.",
       },
       {
-        title: "Character and Plot Development",
+        title: "Story Development",
         description:
-          "Dedicated sections help writers document characters, themes, and plotlines while keeping them connected to the book being developed.",
+          "Dedicated tools connect characters, themes, plotlines, and notes to the book being developed.",
       },
       {
         title: "Book Review Workspace",
@@ -94,14 +89,9 @@ export const projects: Project[] = [
           "Users can create detailed book reviews composed of individual review entries, references, images, and a structured final analysis.",
       },
       {
-        title: "Research References",
+        title: "Research and References",
         description:
-          "Readers can save quotations, page numbers, notes, and supporting images as references for their literary analysis.",
-      },
-      {
-        title: "Drag-and-Drop Organization",
-        description:
-          "Books, reviews, and supporting content can be reordered through an intuitive drag-and-drop interface.",
+          "Readers can organize quotations, page numbers, notes, and images, then reorder supporting content with drag and drop.",
       },
       {
         title: "Reading and Editing Modes",
@@ -114,14 +104,9 @@ export const projects: Project[] = [
           "Book chapters can be exported as styled PDF documents while preserving headings, lists, quotations, text formatting, and alignment.",
       },
       {
-        title: "Hebrew and English Support",
+        title: "Multilingual PDF Export",
         description:
-          "The interface supports Hebrew and English with automatic language detection, translated content, and right-to-left PDF generation.",
-      },
-      {
-        title: "Image Uploads",
-        description:
-          "Cloudinary integration allows users to upload and attach images to book-review references.",
+          "Hebrew and English content can be exported as styled PDFs with right-to-left layout and rich-text formatting preserved.",
       },
       {
         title: "Progressive Web App",
@@ -149,57 +134,57 @@ export const projects: Project[] = [
   {
     name: "Kceli",
     description:
-      "Kceli, a React-based app, revolutionizes weight loss tracking by calculating Total Daily Energy Expenditure (TDEE) and monitoring daily calorie intake via the OpenAI API. Its dynamic calendar interface changes colors to reflect daily nutritional intake, offering detailed reports and effective goal-setting for both short and long-term objectives. Beyond tracking, Kceli celebrates milestones with fireworks and Queen's 'We Are the Champions', making it a proactive companion in your health and fitness journey.",
+      "A health-tracking application that calculates daily energy needs, estimates meal calories with the OpenAI API, and visualizes nutrition and weight trends. Users can manage workouts, set goals, and review daily, weekly, and monthly progress.",
     features: [
       {
         title: "Total Daily Energy Expenditure Calculation",
         description:
-          "Upon signup, Kceli calculates your Total Daily Energy Expenditure (TDEE), providing a personalized starting point for your weight loss journey",
+          "Kceli calculates each user's Total Daily Energy Expenditure (TDEE) to establish a personalized daily target.",
       },
       {
         title: "Caloric Tracking with OpenAI API",
         description:
-          "Users can add their daily meals, and Kceli uses the OpenAI API to accurately calculate and track calorie intake, ensuring precise dietary management",
+          "Users log meals while the OpenAI API estimates calorie intake and tracks it against their daily target.",
       },
       {
         title: "Dynamic Color-Coded Calendar",
         description:
-          "The home page features a calendar that changes color from blue to darker shades to indicate daily nutritional status, providing a quick visual reference of your dietary adherence",
+          "A color-coded calendar provides an at-a-glance view of daily nutritional progress.",
       },
       {
         title: "Detailed Nutritional Reports",
         description:
-          "Kceli offers in-depth reports on nutritional intake, broken down into daily, weekly, and monthly summaries, allowing users to monitor and adjust their eating habits effectively",
+          "Daily, weekly, and monthly reports reveal nutrition patterns over time.",
       },
       {
         title: "Workout Management",
         description:
-          "Users can add, edit, and delete workouts on the dedicated workout page, and set a weekly workout schedule, supporting a balanced approach to weight loss",
+          "Users can manage individual workouts and maintain a weekly training schedule.",
       },
       {
         title: "Goal Setting and Tracking",
         description:
-          "Set and track weight loss goals on a weekly and monthly basis, with Kceli providing the tools and motivation to reach these milestones systematically",
+          "Weekly and monthly goals make progress measurable and easy to follow.",
       },
       {
         title: "Interactive Weight Change Graph",
         description:
-          "The profile page features an interactive graph showing the total weight changes over time, offering users a visual representation of their progress",
+          "An interactive chart visualizes weight changes and long-term progress.",
       },
       {
         title: "Celebratory Milestone Features",
         description:
-          "When users reach their weight loss goals, Kceli celebrates their achievement with on-screen fireworks and the playing of Queen's 'We Are the Champions,' adding an element of fun and encouragement",
+          "On-screen effects celebrate completed goals and key milestones.",
       },
       {
         title: "User Profile Customization",
         description:
-          "Users can edit their personal data in the profile page, tailoring the Kceli experience to their specific weight loss journey and preferences",
+          "Users can update the personal data and preferences that shape their targets.",
       },
       {
         title: "Responsive Design",
         description:
-          "Kceli is optimized for various devices, ensuring a seamless and accessible experience across all screens",
+          "The interface adapts across desktop, tablet, and mobile screens.",
       },
     ],
     gitHubUrl: "https://github.com/EshelEyni/Kceli",
@@ -220,7 +205,7 @@ export const projects: Project[] = [
   {
     name: "DevQuiz",
     description:
-      "DevQuiz is an interactive quiz application designed to help developers enhance their skills in various technologies. It's built with a tech stack of Vite, React, TypeScript, Node.js, and RavenDB. DevQuiz features a dynamic quiz interface, with questions and answers stored in a RavenDB database.The application offers a wide range of topics, including HTML, CSS, JavaScript, React, Node.js, MongoDB, and many more. With thousands of questions in the database, users can test their knowledge and gain a deeper understanding of the mentioned technologies.",
+      "An interactive learning platform with thousands of developer-focused questions across JavaScript, React, Node.js, databases, and web fundamentals. Built with React, TypeScript, Node.js, and RavenDB.",
     features: [
       {
         title: "Wide Range of Topics",
@@ -254,12 +239,13 @@ export const projects: Project[] = [
   },
   {
     name: "Chirper",
-    description: `Chirper is a developing Twitter clone using React and TypeScript for the frontend, and Node.js with TypeScript for the backend, integrated with MongoDB and Mongoose for data management. It supports posts with text, media, and location tags using Google's API. The server emphasizes cleanliness and security, featuring JWT authentication, a rate limiter, and XSS prevention. This project is ongoing with more features planned.`,
+    description:
+      "A full-stack social posting platform supporting text, media, GIFs, location tags, and scheduled posts. Its Node.js API includes JWT authentication, rate limiting, and XSS protection.",
     features: [
       {
         title: "Post Creation",
         description:
-          "Create posts with a limit of 247 characters, gifs, images, videos or gifs.",
+          "Create posts of up to 247 characters with images, videos, GIFs, and location data.",
       },
       {
         title: "Gif Integration",
@@ -309,72 +295,48 @@ export const projects: Project[] = [
   },
   {
     name: "Snapshot",
-    description: `Snapshot is a photo-focused social media platform offering intuitive tools for uploading, sharing, and exploring images. It features photo posting with captions and customization, interaction through comments, likes, and hashtags, and unique elements like location tagging and 24-hour stories. The app also provides personalized user profiles, search functionality, private messaging, and is optimized for all devices with a dark mode for ease of use.`,
+    description:
+      "A photo-first social platform with customizable posts, stories, profiles, hashtags, location tagging, notifications, and direct messaging. Built with Angular, Node.js, Express, and SQLite.",
     features: [
       {
-        title: "Creating posts",
+        title: "Photo Posts",
         description:
-          "Users can upload pictures and add captions to create new posts. Users are required to attach at least one photo to the post. The photos can be customized with a crop tool and color filters.",
+          "Users can publish captioned photos and customize them with cropping and color filters.",
       },
       {
-        title: "Commenting",
+        title: "Social Engagement",
         description:
-          "Users can leave comments on other users' posts. This feature allows users to engage with the content and start conversations.",
+          "Likes, comments, and hashtags help users interact and discover relevant content.",
       },
       {
-        title: "Likes",
+        title: "Location Tagging",
         description:
-          "Users can like other users' posts. This feature allows users to show appreciation for the content and support for the user who posted it.",
-      },
-      {
-        title: "Hashtags",
-        description:
-          "Users can add hashtags to their posts, making it easier for others to discover content related to a specific topic. Hashtags also make it easier for users to find and follow content that interests them.",
-      },
-      {
-        title: "Location tagging",
-        description:
-          "Users can tag their location when posting a picture or story. This feature allows users to share where they are and what they are doing, and also allows other users to discover content from a specific location.",
+          "Posts and stories can include locations to add context and support discovery.",
       },
       {
         title: "Stories",
         description:
-          "Users can upload a picture, customize it with text, drawing or stickers, and it will be uploaded and available for viewing on the app for 24 hours. After 24 hours the story will be archived, but you can still attach it to your profile at your personal profile page, and it will be saved as a highlight to your profile.",
+          "Customizable photo stories remain visible for 24 hours and can later be saved as profile highlights.",
       },
       {
-        title: "User profiles",
+        title: "User Profiles",
         description:
-          "Users can personalize their profiles by adding a bio, a profile picture, and a cover photo. This feature allows users to express themselves and showcase their personal brand.",
+          "Profiles support bios, profile images, cover photos, and saved story highlights.",
       },
       {
-        title: "Search function",
+        title: "Search and Discovery",
         description:
-          "Users can search for other users and hashtags. This feature makes it easy for users to find and follow content and people that interest them.",
+          "Search connects users with people, hashtags, and content that match their interests.",
       },
       {
-        title: "Push notifications",
+        title: "Notifications and Messaging",
         description:
-          "Users will receive notifications when someone likes, comments or messages them. This feature keeps users engaged and informed about the activity on their posts.",
+          "Push notifications surface activity while private messaging supports direct conversations.",
       },
       {
-        title: "Message page",
+        title: "Responsive Dark Mode",
         description:
-          "As a social network, Snapshot has a message page where you can chat with other users online, and create personal relationships.",
-      },
-      {
-        title: "Direct messaging",
-        description:
-          "Users can send private messages to other users. This feature enables users to communicate with each other in a more intimate setting.",
-      },
-      {
-        title: "Responsive design",
-        description:
-          "The app is optimized for all screen sizes and devices, allowing users to access and use the app on any device.",
-      },
-      {
-        title: "Dark mode",
-        description:
-          "The dark mode feature on Snapshot allows users to switch to a darker color scheme on the app, reducing eye strain and making it easier to use in low-light environments. It also provides a sleek and modern aesthetic for users who prefer a darker theme.",
+          "The responsive interface works across screen sizes and includes a dark theme for low-light use.",
       },
     ],
     gitHubUrl: "https://github.com/EshelEyni/Snapshot",
@@ -391,47 +353,38 @@ export const projects: Project[] = [
   },
   {
     name: "Symphony",
-    description: `Symphony is a multilayered music app. With it's search engine and music player Symphony serves the need of the singular music lover. You can like a song,and he will be saved to your personal library under the saved playlist "Liked Songs". You can also create you own playlists, giving you the options to manage your love of music. But that's not all, Symphony also serves as a musical social network. Once you liked a song, Symphony will look for other users who like the same music and showcase them to you, in your home page. You can follow those users and expand your musical horizons. Profiles will also be showcased in the search page, if their playlists includes the search term you were looking for.`,
+    description:
+      "A music player and social discovery platform powered by the YouTube API. Users can search and play music, build playlists, follow listeners with similar tastes, and receive real-time profile and playlist updates.",
     features: [
       {
         title: "Multifunctional Media Player",
         description:
-          "Play songs and playlists with options to switch songs, skip 10 seconds back and forward, set playback mode, timeline, and volume. Features include toggle mute and access to the Queue page to see the currently running playlist.",
+          "Playback controls include seeking, volume, mute, playback modes, and a live queue.",
       },
       {
         title: "Search and Play Songs",
         description:
-          "Search songs using the YouTube API, play them instantly, like them to save to your 'Liked Songs' playlist, or add them to your personal playlists.",
+          "YouTube-powered search lets users play songs instantly and save them to Liked Songs or custom playlists.",
       },
       {
-        title: "Playlist Creation",
+        title: "Playlist Creation and Management",
         description:
-          "Create your own playlist with the option to add an image. Symphony automatically colors the background with the dominant color of the image, creating a unique visual. Edit the playlist name, description, and background color. Add playlists to your profile for others to see.",
-      },
-      {
-        title: "Playlist Management",
-        description:
-          "Add or remove songs from your playlist and shuffle the order using Drag and Drop (DND), with changes saved for the next entry.",
-      },
-      {
-        title: "DND Functionality",
-        description:
-          "DND is applied throughout the application, including in the sidebar with the playlist list and inside any playlist. Changes are saved if the user owns the playlist.",
+          "Users can create, edit, reorder, and share playlists with custom artwork and automatically generated color themes.",
       },
       {
         title: "User Profiles and Social Interaction",
         description:
-          "View other users' profiles and follow them for social interaction within the app.",
+          "Profiles and shared music preferences help listeners discover and follow people with similar tastes.",
       },
       {
         title: "Real-Time Online Updates",
         description:
-          "Online updates are available using Web sockets, allowing users to see real-time updates of others' profiles or playlists.",
+          "WebSockets deliver live updates to profiles and shared playlists.",
       },
       {
         title: "PWA Support",
         description:
-          "Symphony supports Progressive Web App (PWA) functionality, enabling download and use on mobile devices or personal computers.",
+          "The installable PWA supports use across desktop and mobile devices.",
       },
     ],
     gitHubUrl: "https://github.com/EshelEyni/Symphony",

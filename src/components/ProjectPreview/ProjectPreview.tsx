@@ -36,7 +36,7 @@ export const ProjectPreview: FC<ProjectPreviewProps> = ({ project, idx }) => {
           {project.description}
         </p>
         <button className="btn btn--animated" onClick={onNavigate}>
-          <span>details</span>
+          <span>View project</span>
         </button>
       </div>
     </article>

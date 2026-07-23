@@ -36,7 +36,11 @@ export const SkillDetails: FC = () => {
     <main className="skill-details">
       <header className="skill-details__header">
         <div className="skill-details__content">
-          <img className="skill-details__logo" src={skill.logo} alt="logo" />
+          <img
+            className="skill-details__logo"
+            src={skill.logo}
+            alt={`${skill.name} logo`}
+          />
           <h1 className="skill-details__title">{skill.name}</h1>
         </div>
       </header>

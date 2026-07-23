@@ -15,7 +15,7 @@ export const Education: FC = () => {
     <section id="education" className="education">
       <SectionHeader
         title="Education & Continuous Learning"
-        description="Formal training and selected coursework that supports the engineering work I do today."
+        description="Formal training and selected coursework across software architecture, testing, databases, and modern web development."
       />
       <CourseList courses={visibleCourses} />
       <button
@@ -25,8 +25,8 @@ export const Education: FC = () => {
         onClick={() => setShowAllCourses((isVisible) => !isVisible)}
       >
         {showAllCourses
-          ? "Show selected courses"
-          : `View all ${courses.length - 1} courses`}
+          ? "Show featured courses"
+          : `View all ${courses.length} courses`}
       </button>
     </section>
   );

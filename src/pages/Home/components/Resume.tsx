@@ -8,7 +8,7 @@ export const Resume: FC = () => {
     <section id="resume" className="resume">
       <SectionHeader
         title="resume"
-        description="Here you can find my resume. Click on the button below to download it."
+        description="A concise overview of my experience, technical skills, and education."
       />
 
       <InViewSection>
@@ -20,7 +20,7 @@ export const Resume: FC = () => {
             download="Eshel Eyni - CV.pdf"
             className="resume__button btn btn--animated"
           >
-            <span>Resume</span>
+            <span>Download CV</span>
           </a>
         </div>
       </InViewSection>

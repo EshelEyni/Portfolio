@@ -14,7 +14,7 @@ export const SocialLinks: FC<SocialLinksProps> = ({
   function handleEmailClick() {
     const email = "esheleyni@gmail.com";
     copyToClipboard(email);
-    toast.success(<div>"Email copied to clipboard"</div>);
+    toast.success("Email copied");
   }
 
   return (

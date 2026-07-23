@@ -11,9 +11,8 @@ export const AppFooter: FC = () => {
           <div className="app-footer__main-content__user-info">
             <h2>Eshel Eyni</h2>
             <p>
-              A Web Developer committed to building high-quality, scalable
-              websites. Precision in code and attention to detail are my
-              hallmarks.
+              Full-stack developer building reliable products and thoughtfully
+              engineered user experiences.
             </p>
           </div>
 
@@ -24,8 +23,8 @@ export const AppFooter: FC = () => {
         </div>
 
         <p className="app-footer__copyrights">
-          <span>&copy;</span> Copyrights {new Date().getFullYear()}. Made by{" "}
-          <strong>Eshel Eyni</strong>.
+          <span>&copy;</span> {new Date().getFullYear()}{" "}
+          <strong>Eshel Eyni</strong>. Built with care.
         </p>
       </InViewSection>
     </footer>

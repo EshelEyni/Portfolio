@@ -17,7 +17,7 @@ export const UserDisplay: FC = () => {
   }
   return (
     <div className="user-display" onClick={handleUserDisplayClick}>
-      <img src="/icons/android-chrome-512x512.png" alt="user-img" />
+      <img src="/icons/android-chrome-512x512.png" alt="Eshel Eyni" />
       <h2 className="user-display__name">Eshel Eyni</h2>
     </div>
   );

@@ -21,7 +21,7 @@ export const CourseCard: FC<CourseCardProps> = ({
           <h3 className="course-card__title">{course.name}</h3>
           <div className="course-card__details">
             <span className="course-card__provider">{course.provider}</span>
-            <span aria-hidden="true">·</span>
+            <span aria-hidden="true"> | </span>
             <time className="course-card__date" dateTime={`${course.year}`}>
               {course.year}
             </time>

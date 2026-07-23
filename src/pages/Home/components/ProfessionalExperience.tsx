@@ -10,7 +10,7 @@ export const ProfessionalExperience: FC = () => {
     <section id="experience" className="professional-experience">
       <SectionHeader
         title="Professional Experience"
-        description="Production software, complex systems, and growing technical ownership across enterprise, geospatial, and AI products."
+        description="Building production software across AI, geospatial, and enterprise systems, with growing ownership of architecture, delivery, and engineering quality."
       />
 
       <div className="professional-experience__timeline">
@@ -35,12 +35,12 @@ export const ProfessionalExperience: FC = () => {
 
                 <div className="experience-card__heading">
                   <p className="experience-card__period">
-                    {experience.startDate} — {experience.endDate}
+                    {experience.startDate} - {experience.endDate}
                   </p>
                   <h2>{experience.position}</h2>
                   <p className="experience-card__company">
                     {experience.companyName}
-                    <span aria-hidden="true">·</span>
+                    <span aria-hidden="true"> | </span>
                     {experience.location}
                   </p>
                 </div>
