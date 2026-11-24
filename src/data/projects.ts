@@ -2,6 +2,102 @@ import { Project } from "../types";
 
 export const projects: Project[] = [
   {
+    name: "Roza",
+    description:
+      "A full-stack platform for writers and readers. Authors plan and draft books in a Writing Studio, publish them as EPUBs, and read them in a Reading Room with an AI reading companion, a Hebrew dictionary, and audiobook narration. Claude and ChatGPT can propose edits through an MCP connector, and nothing reaches the book until the author approves it. Roza runs on the web, as an installable PWA, and as a Windows desktop app.",
+    features: [
+      {
+        title: "Writing Studio",
+        description:
+          "A Slate-based manuscript editor with drafts, backups of the main text, inline draft comparison, find, go to line, word goals, and change-only saving.",
+      },
+      {
+        title: "Chapter Bible and Planning",
+        description:
+          "Each chapter links to its characters, themes, plotlines, notes, and summary. A chapter overview board and book-level task boards support planning, with drag-and-drop ordering.",
+      },
+      {
+        title: "Screenplay Mode",
+        description:
+          "Chapters can be written as screenplays with semantic scene, action, character, and dialogue blocks and dedicated keyboard shortcuts.",
+      },
+      {
+        title: "Inline Notes",
+        description:
+          "Writers can attach notes to an exact text selection. Notes appear in the margin, in Read mode, and in the Chapter Bible.",
+      },
+      {
+        title: "EPUB Publishing",
+        description:
+          "A Writing Studio book can be published as an EPUB with a cover, title page, and table of contents. It then opens in the Reading Room, and it can be updated after more writing.",
+      },
+      {
+        title: "Reading Room",
+        description:
+          "A private EPUB library and reader with saved progress, highlights, personal annotations, flagged passages, full-text search, and offline caching of recent books.",
+      },
+      {
+        title: "AI Reading Companion",
+        description:
+          "Readers can ask about a passage, a character, or the whole book in tabbed chat groups. Answers draw on relevant excerpts and avoid spoilers past the reader's position unless allowed.",
+      },
+      {
+        title: "Audiobook Mode",
+        description:
+          "Books are narrated with OpenAI voices, local Kokoro voices, or system voices, with sentence and word highlighting that follows the audio. Local voices are free, private, and work offline in the desktop app.",
+      },
+      {
+        title: "Language Tools and Focused Reading",
+        description:
+          "Readers get a Hebrew dictionary with a translation fallback and a private vocabulary list. Sentence Mode, RSVP speed reading, and keyboard word navigation support close reading.",
+      },
+      {
+        title: "AI Editing Through MCP",
+        description:
+          "An MCP server lets Claude and ChatGPT propose chapter drafts, story elements, and tasks. A Staging Room shows each change as a diff, and the author approves or rejects it. The live book is backed up before every approval.",
+      },
+      {
+        title: "Windows Desktop App",
+        description:
+          "An Electron app packages the Reading Room and Writing Studio, runs local narration voices, and shows reading and writing progress on the taskbar.",
+      },
+      {
+        title: "Book Reviews and Research",
+        description:
+          "Readers can build structured book reviews with quotations, page references, notes, and images, and reorder them with drag and drop.",
+      },
+      {
+        title: "Hebrew and English",
+        description:
+          "The interface supports Hebrew and English with right-to-left layouts, and chapters can be exported as styled PDFs.",
+      },
+      {
+        title: "Automated Deployment",
+        description:
+          "The app is built as a Docker image and deployed to AWS through GitHub Actions and AWS Systems Manager.",
+      },
+    ],
+    gitHubUrl: "https://github.com/EshelEyni/Roza",
+    liveInstanceUrl: "https://roza.esheleyni.com/",
+    imageUrl: "/projects/roza.webp",
+    technologies: [
+      "React",
+      "TypeScript",
+      "TanStack Query",
+      "Slate",
+      "epub.js",
+      "Tailwind CSS",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "OpenAI",
+      "MCP",
+      "Electron",
+      "Docker",
+      "AWS",
+    ],
+  },
+  {
     name: "Fatal Combat",
     description:
       "A retro 2D fighting game with a custom Canvas engine, CPU opponents, and real-time online multiplayer. Built with Vue, FastAPI, and WebSockets, it features secure accounts, matchmaking, synchronized combat, and containerized deployment.",
@@ -63,74 +159,6 @@ export const projects: Project[] = [
       "AWS",
     ],
   },
-  {
-    name: "Roza",
-    description:
-      "A full-stack workspace for authors and literary researchers to write books, develop characters and plotlines, organize research, and create structured reviews. Features include rich-text editing, multilingual and offline support, image uploads, and styled PDF export.",
-    features: [
-      {
-        title: "Structured Book Writing",
-        description:
-          "Writers can organize books into chapters and manage supporting information such as characters, themes, plotlines, and notes from one workspace.",
-      },
-      {
-        title: "Rich-Text Editor",
-        description:
-          "The Slate-based editor supports headings, paragraphs, block quotes, numbered and bulleted lists, text alignment, bold, italic, and underlined text.",
-      },
-      {
-        title: "Story Development",
-        description:
-          "Dedicated tools connect characters, themes, plotlines, and notes to the book being developed.",
-      },
-      {
-        title: "Book Review Workspace",
-        description:
-          "Users can create detailed book reviews composed of individual review entries, references, images, and a structured final analysis.",
-      },
-      {
-        title: "Research and References",
-        description:
-          "Readers can organize quotations, page numbers, notes, and images, then reorder supporting content with drag and drop.",
-      },
-      {
-        title: "Reading and Editing Modes",
-        description:
-          "Users can switch between focused reading and editing modes, minimize individual sections, or use fullscreen mode for distraction-free work.",
-      },
-      {
-        title: "PDF Export",
-        description:
-          "Book chapters can be exported as styled PDF documents while preserving headings, lists, quotations, text formatting, and alignment.",
-      },
-      {
-        title: "Multilingual PDF Export",
-        description:
-          "Hebrew and English content can be exported as styled PDFs with right-to-left layout and rich-text formatting preserved.",
-      },
-      {
-        title: "Progressive Web App",
-        description:
-          "Roza is installable as a PWA and includes offline support for a more reliable experience across desktop and mobile devices.",
-      },
-    ],
-    gitHubUrl: "https://github.com/EshelEyni/Roza",
-    liveInstanceUrl: "https://roza.esheleyni.com/",
-    imageUrl: "/projects/roza.webp",
-    technologies: [
-      "React",
-      "TypeScript",
-      "TanStack Query",
-      "Slate",
-      "Sass",
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "JWT",
-      "Docker",
-    ],
-  },
-
   {
     name: "Kceli",
     description:
