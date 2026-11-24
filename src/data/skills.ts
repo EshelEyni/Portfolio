@@ -2,27 +2,10 @@ import { Skill } from "../types";
 
 export const skills: Skill[] = [
   {
-    name: "JavaScript",
-    logo: "/logos/technologies/javascript-logo.png",
-    courseIds: ["1", "4", "5", "6", "7", "10", "11", "12"],
-    projectNames: [
-      "Snapshot",
-      "Symphony",
-      "Chirper",
-      "DevQuiz",
-      "Kceli",
-      "Roza",
-      "Fatal Combat",
-    ],
-    professionalExperienceIds: ["idmr", "webiks", "qbiq"],
-  },
-  {
     name: "TypeScript",
     logo: "/logos/technologies/typescript-logo.png",
     courseIds: ["1", "5", "11"],
     projectNames: [
-      "Snapshot",
-      "Chirper",
       "DevQuiz",
       "Kceli",
       "Roza",
@@ -31,17 +14,10 @@ export const skills: Skill[] = [
     professionalExperienceIds: ["webiks", "qbiq"],
   },
   {
-    name: "JQuery",
-    logo: "/logos/technologies/jquery-logo.png",
-    courseIds: ["1"],
-    projectNames: [],
-    professionalExperienceIds: ["idmr"],
-  },
-  {
     name: "SASS",
     logo: "/logos/technologies/sass-logo.png",
     courseIds: ["1", "3"],
-    projectNames: ["Snapshot", "Symphony", "Chirper", "DevQuiz", "Kceli"],
+    projectNames: ["DevQuiz", "Kceli"],
     professionalExperienceIds: ["webiks", "qbiq"],
   },
   {
@@ -55,21 +31,21 @@ export const skills: Skill[] = [
     name: "React",
     logo: "/logos/technologies/react-logo.png",
     courseIds: ["1", "6"],
-    projectNames: ["Symphony", "Chirper", "DevQuiz", "Kceli", "Roza"],
+    projectNames: ["DevQuiz", "Kceli", "Roza"],
     professionalExperienceIds: ["webiks"],
   },
   {
     name: "Redux",
     logo: "/logos/technologies/redux-logo.png",
     courseIds: ["1", "6"],
-    projectNames: ["Symphony", "Chirper", "DevQuiz", "Kceli"],
+    projectNames: ["DevQuiz", "Kceli"],
     professionalExperienceIds: ["webiks"],
   },
   {
     name: "Angular",
     logo: "/logos/technologies/angular-logo.png",
     courseIds: ["1"],
-    projectNames: ["Snapshot"],
+    projectNames: [],
     professionalExperienceIds: [],
   },
   {
@@ -84,9 +60,6 @@ export const skills: Skill[] = [
     logo: "/logos/technologies/nodejs-logo.png",
     courseIds: ["1", "7", "10", "11"],
     projectNames: [
-      "Symphony",
-      "Snapshot",
-      "Chirper",
       "DevQuiz",
       "Kceli",
       "Roza",
@@ -104,14 +77,14 @@ export const skills: Skill[] = [
     name: "MongoDB",
     logo: "/logos/technologies/mongodb-logo.png",
     courseIds: ["1", "7", "9"],
-    projectNames: ["Symphony", "Chirper", "Kceli", "Roza"],
+    projectNames: ["Kceli", "Roza"],
     professionalExperienceIds: ["webiks"],
   },
   {
     name: "SQL",
     logo: "/logos/technologies/sql-logo.png",
     courseIds: ["8"],
-    projectNames: ["Snapshot", "Fatal Combat"],
+    projectNames: ["Fatal Combat"],
     professionalExperienceIds: ["idmr"],
   },
   {
@@ -125,7 +98,7 @@ export const skills: Skill[] = [
     name: "Jest",
     logo: "/logos/technologies/jest-logo.png",
     courseIds: ["10", "11"],
-    projectNames: ["Chirper", "Kceli"],
+    projectNames: ["Kceli"],
     professionalExperienceIds: ["webiks", "qbiq"],
   },
   {
@@ -133,9 +106,6 @@ export const skills: Skill[] = [
     logo: "/logos/technologies/git-logo.png",
     courseIds: ["13"],
     projectNames: [
-      "Symphony",
-      "Snapshot",
-      "Chirper",
       "DevQuiz",
       "Kceli",
       "Roza",
@@ -148,9 +118,6 @@ export const skills: Skill[] = [
     logo: "/logos/technologies/github-logo.png",
     courseIds: ["13"],
     projectNames: [
-      "Symphony",
-      "Snapshot",
-      "Chirper",
       "DevQuiz",
       "Kceli",
       "Roza",
@@ -163,9 +130,6 @@ export const skills: Skill[] = [
     logo: "/logos/technologies/docker-logo.png",
     courseIds: ["16"],
     projectNames: [
-      "Symphony",
-      "Snapshot",
-      "Chirper",
       "DevQuiz",
       "Kceli",
       "Roza",

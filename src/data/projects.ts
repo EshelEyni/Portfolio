@@ -48,7 +48,7 @@ export const projects: Project[] = [
       },
     ],
     gitHubUrl: "https://github.com/EshelEyni/fatal-combat",
-    liveInstanceUrl: "https://fatal-combat.esheleyni.com",
+    liveInstanceUrl: "",
     imageUrl: "/projects/fatal-combat.png",
     technologies: [
       "Vue 3",
@@ -115,8 +115,8 @@ export const projects: Project[] = [
       },
     ],
     gitHubUrl: "https://github.com/EshelEyni/Roza",
-    liveInstanceUrl: "",
-    imageUrl: "/projects/roza.png",
+    liveInstanceUrl: "https://roza.esheleyni.com/",
+    imageUrl: "/projects/roza.webp",
     technologies: [
       "React",
       "TypeScript",
@@ -188,7 +188,7 @@ export const projects: Project[] = [
       },
     ],
     gitHubUrl: "https://github.com/EshelEyni/Kceli",
-    liveInstanceUrl: "https://kceli.esheleyni.com/home",
+    liveInstanceUrl: "",
     imageUrl: "/projects/kceli.png",
     technologies: [
       "React",
@@ -224,7 +224,7 @@ export const projects: Project[] = [
       },
     ],
     gitHubUrl: "https://github.com/EshelEyni/DevQuiz",
-    liveInstanceUrl: "https://devquiz.esheleyni.com/home",
+    liveInstanceUrl: "",
     imageUrl: "/projects/devQuiz.png",
     technologies: [
       "React",
@@ -235,168 +235,6 @@ export const projects: Project[] = [
       "MongoDB",
       "Mongoose",
       "Rest API",
-    ],
-  },
-  {
-    name: "Chirper",
-    description:
-      "A full-stack social posting platform supporting text, media, GIFs, location tags, and scheduled posts. Its Node.js API includes JWT authentication, rate limiting, and XSS protection.",
-    features: [
-      {
-        title: "Post Creation",
-        description:
-          "Create posts of up to 247 characters with images, videos, GIFs, and location data.",
-      },
-      {
-        title: "Gif Integration",
-        description:
-          "The Gif modal allows users to search for and select gifs to include in their posts.",
-      },
-      {
-        title: "Post Location Tagging",
-        description:
-          "The application integrates Google's location API to allow users to tag posts with a location.",
-      },
-      {
-        title: "Post Scheduling",
-        description:
-          "The application provides a post schedule modal with a complex range of inputs, built with custom hooks, for users to schedule their posts.",
-      },
-      {
-        title: "Post Statistics",
-        description:
-          "The Post Stat feature provides insights and analytics of individual posts.",
-      },
-    ],
-    gitHubUrl: "https://github.com/EshelEyni/Chirper",
-    liveInstanceUrl: "",
-    imageUrl: "/projects/chirper.png",
-    technologies: [
-      "React",
-      "TypeScript",
-      "Redux",
-      "React Router",
-      "Axios",
-      "Material UI",
-      "Google Maps API",
-      "Sass",
-      "Node.JS",
-      "TypeScript",
-      "Express",
-      "JWT",
-      "Bcrypt",
-      "Express",
-      "Rate Limiter",
-      "Helmet",
-      "MongoDB",
-      "Mongoose",
-      "MongoDB Atlas",
-    ],
-  },
-  {
-    name: "Snapshot",
-    description:
-      "A photo-first social platform with customizable posts, stories, profiles, hashtags, location tagging, notifications, and direct messaging. Built with Angular, Node.js, Express, and SQLite.",
-    features: [
-      {
-        title: "Photo Posts",
-        description:
-          "Users can publish captioned photos and customize them with cropping and color filters.",
-      },
-      {
-        title: "Social Engagement",
-        description:
-          "Likes, comments, and hashtags help users interact and discover relevant content.",
-      },
-      {
-        title: "Location Tagging",
-        description:
-          "Posts and stories can include locations to add context and support discovery.",
-      },
-      {
-        title: "Stories",
-        description:
-          "Customizable photo stories remain visible for 24 hours and can later be saved as profile highlights.",
-      },
-      {
-        title: "User Profiles",
-        description:
-          "Profiles support bios, profile images, cover photos, and saved story highlights.",
-      },
-      {
-        title: "Search and Discovery",
-        description:
-          "Search connects users with people, hashtags, and content that match their interests.",
-      },
-      {
-        title: "Notifications and Messaging",
-        description:
-          "Push notifications surface activity while private messaging supports direct conversations.",
-      },
-      {
-        title: "Responsive Dark Mode",
-        description:
-          "The responsive interface works across screen sizes and includes a dark theme for low-light use.",
-      },
-    ],
-    gitHubUrl: "https://github.com/EshelEyni/Snapshot",
-    liveInstanceUrl: "https://snapshot.esheleyni.com/#/",
-    imageUrl: "/projects/snapshot.png",
-    technologies: [
-      "SQLite3",
-      "Express",
-      "Node.js",
-      "Rest API",
-      "Angular",
-      "Sass",
-    ],
-  },
-  {
-    name: "Symphony",
-    description:
-      "A music player and social discovery platform powered by the YouTube API. Users can search and play music, build playlists, follow listeners with similar tastes, and receive real-time profile and playlist updates.",
-    features: [
-      {
-        title: "Multifunctional Media Player",
-        description:
-          "Playback controls include seeking, volume, mute, playback modes, and a live queue.",
-      },
-      {
-        title: "Search and Play Songs",
-        description:
-          "YouTube-powered search lets users play songs instantly and save them to Liked Songs or custom playlists.",
-      },
-      {
-        title: "Playlist Creation and Management",
-        description:
-          "Users can create, edit, reorder, and share playlists with custom artwork and automatically generated color themes.",
-      },
-      {
-        title: "User Profiles and Social Interaction",
-        description:
-          "Profiles and shared music preferences help listeners discover and follow people with similar tastes.",
-      },
-      {
-        title: "Real-Time Online Updates",
-        description:
-          "WebSockets deliver live updates to profiles and shared playlists.",
-      },
-      {
-        title: "PWA Support",
-        description:
-          "The installable PWA supports use across desktop and mobile devices.",
-      },
-    ],
-    gitHubUrl: "https://github.com/EshelEyni/Symphony",
-    liveInstanceUrl: "https://symphony.esheleyni.com/",
-    imageUrl: "/projects/symphony.png",
-    technologies: [
-      "React",
-      "Sass",
-      "Node.js",
-      "Express",
-      "Rest API",
-      "MongoDB",
     ],
   },
 ];
